@@ -1,0 +1,3887 @@
+{
+  "captured_at_utc": "2026-11-10T00:37:45.000441+00:00",
+  "files": [
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6Core.so.6",
+      "bytes": 7693352,
+      "sha256": "26341368e3f2017ab9e33a3faa8806ae87fd59f2f8491f4c5aa7e8c1053b8a05",
+      "needed": [
+        "ld-linux-x86-64.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libglib-2.0.so.0",
+        "libgthread-2.0.so.0",
+        "libicudata.so.73",
+        "libicui18n.so.73",
+        "libicuuc.so.73",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libz.so.1",
+        "libzstd.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.25",
+        "2.27",
+        "2.28",
+        "2.29",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.32",
+        "2.33",
+        "2.34",
+        "2.4",
+        "2.6",
+        "2.7",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6DBus.so.6",
+      "bytes": 894184,
+      "sha256": "678d0bf82548e35680a93615d476d79405f1d4beec4ce405236e04bc64ea14eb",
+      "needed": [
+        "libQt6Core.so.6",
+        "libc.so.6",
+        "libdbus-1.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6Gui.so.6",
+      "bytes": 11572856,
+      "sha256": "392cf5a2fed77ca7b861484ae0f25a2f7f54789024e79518c6c28e1ddf5b4b1a",
+      "needed": [
+        "libEGL.so.1",
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6DBus.so.6",
+        "libX11.so.6",
+        "libc.so.6",
+        "libfontconfig.so.1",
+        "libfreetype.so.6",
+        "libgcc_s.so.1",
+        "libglib-2.0.so.0",
+        "libgthread-2.0.so.0",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.11",
+        "2.14",
+        "2.16",
+        "2.2.5",
+        "2.27",
+        "2.29",
+        "2.3.4",
+        "2.32",
+        "2.34",
+        "2.4",
+        "2.7"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6OpenGL.so.6",
+      "bytes": 710760,
+      "sha256": "8452e1c7f849a81f38fa2e99fbcd066c24902892fcfa4ce0e188f4691dc2d106",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.29",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6Svg.so.6",
+      "bytes": 683112,
+      "sha256": "ad54290bfb1929296b1662375d1902ad9810162051f51ff00bce3b2843bdbf2c",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.32",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6WaylandClient.so.6",
+      "bytes": 1263952,
+      "sha256": "28423e53b5c6f6c69d50068be70467f15826027e6d965b68411e9daad30712dc",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6Widgets.so.6",
+      "bytes": 8172264,
+      "sha256": "ae894c4a328a883311faf7449dcdd1ec70e6be25784e5676cb9977fe437d01c4",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.29",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6WlShellIntegration.so.6",
+      "bytes": 39408,
+      "sha256": "03b88400fcbbaeb19448b39cc1db9bd1cbc7e870ce5827eeb7254103e634549d",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libQt6XcbQpa.so.6",
+      "bytes": 779720,
+      "sha256": "fe274149676867bb59884a3bb0aa5ae6b2365a92f1e7449ea12a4dc267a53fa3",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libX11-xcb.so.1",
+        "libX11.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libglib-2.0.so.0",
+        "libgthread-2.0.so.0",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxcb-cursor.so.0",
+        "libxcb-icccm.so.4",
+        "libxcb-image.so.0",
+        "libxcb-keysyms.so.1",
+        "libxcb-randr.so.0",
+        "libxcb-render-util.so.0",
+        "libxcb-render.so.0",
+        "libxcb-shape.so.0",
+        "libxcb-shm.so.0",
+        "libxcb-sync.so.1",
+        "libxcb-util.so.1",
+        "libxcb-xfixes.so.0",
+        "libxcb-xkb.so.1",
+        "libxcb.so.1",
+        "libxkbcommon-x11.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libicudata.so.73",
+      "bytes": 32035888,
+      "sha256": "4d24b3a908dd838bea23414e16aa830d05a2a306c475246ab11ef0a00c3037e9",
+      "needed": [],
+      "glibc_versions": []
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libicui18n.so.73",
+      "bytes": 4477136,
+      "sha256": "ad5410f3e4eb4f01f91d10ddb3780cdbcbeb902ed04a3bc4d3f562b956578d52",
+      "needed": [
+        "libc.so.6",
+        "libdl.so.2",
+        "libgcc_s.so.1",
+        "libicudata.so.73",
+        "libicuuc.so.73",
+        "libm.so.6",
+        "libpthread.so.0",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/lib/libicuuc.so.73",
+      "bytes": 2571736,
+      "sha256": "8ce3427af0d2bf566bb422ce80a12014137d12ed452fe2dd9ed481ee46181168",
+      "needed": [
+        "ld-linux-x86-64.so.2",
+        "libc.so.6",
+        "libdl.so.2",
+        "libgcc_s.so.1",
+        "libicudata.so.73",
+        "libm.so.6",
+        "libpthread.so.0",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.27",
+        "2.3"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/generic/libqevdevkeyboardplugin.so",
+      "bytes": 68552,
+      "sha256": "ef18d01f3a305ace09d2090169adc08701333337e5e4a8cda47d09c60aca7a86",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/generic/libqevdevmouseplugin.so",
+      "bytes": 60864,
+      "sha256": "6687ce702ef9f59abc343ee84ed3dbc3632b68f1042d32afd52a56304c5d9635",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/generic/libqevdevtabletplugin.so",
+      "bytes": 56264,
+      "sha256": "58ded2aa69be32828a522266431f33a95b936caf09def7bcc27325ba2df7b425",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/generic/libqevdevtouchplugin.so",
+      "bytes": 142656,
+      "sha256": "fb973c106f3b3a680c36c0ec4b0bb0e7253c824b1be3a5810e2f31fc41fb6fc6",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/iconengines/libqsvgicon.so",
+      "bytes": 68152,
+      "sha256": "5c83c91f83f7a528ad054d1031b338c21e9d7c3aca3d02bf98518ec5d89d65af",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6Svg.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/imageformats/libqjpeg.so",
+      "bytes": 539192,
+      "sha256": "aedd3e4f7a233365dcef9f016bd64f05575dd49aba69ce923fc99f214f5384ee",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.11",
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4",
+        "2.7"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so",
+      "bytes": 31440,
+      "sha256": "45aaae8084b7fa779198d157ad86ab4b531ba2dac1f7878a31f406f2ca81f273",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so",
+      "bytes": 181200,
+      "sha256": "804c433df38fa569cfc7519feeafd79af04d8ad704f029578407e7fa05582b65",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6DBus.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/platforms/libqminimal.so",
+      "bytes": 39480,
+      "sha256": "65b076f7bcfcc1dfa2da0bfff3a40f6429d7b0470569d6569f8d8fe2d5314b1a",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libfreetype.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/platforms/libqoffscreen.so",
+      "bytes": 117312,
+      "sha256": "b03cc26de26de6e09adceaf7ab2866ebbae39d88d893e0a5032e3ea55f190a67",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libX11.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/platforms/libqxcb.so",
+      "bytes": 19000,
+      "sha256": "8611ee4e2315bcf4b38e14e2714b553e227e489a5cfaaa40b692fff9f2ac272a",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6XcbQpa.so.6",
+        "libX11-xcb.so.1",
+        "libX11.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxcb-cursor.so.0",
+        "libxcb-icccm.so.4",
+        "libxcb-image.so.0",
+        "libxcb-keysyms.so.1",
+        "libxcb-randr.so.0",
+        "libxcb-render-util.so.0",
+        "libxcb-render.so.0",
+        "libxcb-shape.so.0",
+        "libxcb-shm.so.0",
+        "libxcb-sync.so.1",
+        "libxcb-util.so.1",
+        "libxcb-xfixes.so.0",
+        "libxcb-xkb.so.1",
+        "libxcb.so.1",
+        "libxkbcommon-x11.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/platformthemes/libqgtk3.so",
+      "bytes": 237384,
+      "sha256": "9a8157d6b1ae49e790f0d84b93d350616f92c97cbb3df673b3a63aa8b6351e7f",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6DBus.so.6",
+        "libQt6Gui.so.6",
+        "libX11.so.6",
+        "libatk-1.0.so.0",
+        "libc.so.6",
+        "libcairo-gobject.so.2",
+        "libcairo.so.2",
+        "libgcc_s.so.1",
+        "libgdk-3.so.0",
+        "libgdk_pixbuf-2.0.so.0",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libgtk-3.so.0",
+        "libharfbuzz.so.0",
+        "libm.so.6",
+        "libpango-1.0.so.0",
+        "libpangocairo-1.0.so.0",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/platformthemes/libqxdgdesktopportal.so",
+      "bytes": 155712,
+      "sha256": "67fe302dbb46f498dc6b7fc7d1d54d5939f55635ad988b9af730c2e25a31ea4a",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6DBus.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-decoration-client/libadwaita.so",
+      "bytes": 122040,
+      "sha256": "225a5289c9518ea4a61a31daf881524309ff150a57601944eed37699e079da54",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6DBus.so.6",
+        "libQt6Gui.so.6",
+        "libQt6Svg.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-decoration-client/libbradient.so",
+      "bytes": 43576,
+      "sha256": "c7f7f5547ad55202de8a35dfa0765a7c67a8404dee19eb07c568ee3d64f49cc9",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-graphics-integration-client/libdmabuf-server.so",
+      "bytes": 31376,
+      "sha256": "06de14b9f4af7f3a89f8136b21bf3178c9e7d5957496a034ea5c3cc41f1cc23a",
+      "needed": [
+        "libEGL.so.1",
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6OpenGL.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-graphics-integration-client/libdrm-egl-server.so",
+      "bytes": 31360,
+      "sha256": "18e9efba44e96184c60581f13273285bf787d8f2e21231eb2f4b14a357a7dd44",
+      "needed": [
+        "libEGL.so.1",
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6OpenGL.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-graphics-integration-client/libqt-plugin-wayland-egl.so",
+      "bytes": 80584,
+      "sha256": "a18ea802b7cde98dbfb0769c8ff69b1fa7cd49750078567a8462f297e30665e4",
+      "needed": [
+        "libEGL.so.1",
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6OpenGL.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libwayland-egl.so.1",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-graphics-integration-client/libshm-emulation-server.so",
+      "bytes": 31368,
+      "sha256": "571b172fb331e199f3c63c09d2cded3b585cd81cedeb2a15bddbb1540beb0017",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6OpenGL.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-graphics-integration-client/libvulkan-server.so",
+      "bytes": 31360,
+      "sha256": "8d8ac1c33618dc979c50497541bd7c0f5012ed34248de5b05fc15077b7e20fac",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6OpenGL.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-shell-integration/libfullscreen-shell-v1.so",
+      "bytes": 35480,
+      "sha256": "411e4a8b431937b0b54b7d72e1c7669c475ce91e31832808995387cd88e35306",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-shell-integration/libivi-shell.so",
+      "bytes": 60184,
+      "sha256": "b50baea26ba1a06806086e067b247eedaa6562dfe151e56fc1a90cf00b66c9dc",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-shell-integration/libqt-shell.so",
+      "bytes": 47736,
+      "sha256": "7b07043f423d73168b74b80a39ffe01b2e6bd091a155c2d3388e60fcaabb8772",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-shell-integration/libwl-shell-plugin.so",
+      "bytes": 19008,
+      "sha256": "644dd3a2a0cec928f16350088d90e0fe81db3364e386c498e43e5145a769f7d7",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6WaylandClient.so.6",
+        "libQt6WlShellIntegration.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/wayland-shell-integration/libxdg-shell.so",
+      "bytes": 146808,
+      "sha256": "69dee3d9eb391e4d167fb9c077a6bf2f0d7a074ce0a7d62ff6b6e34f50984f8c",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6WaylandClient.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/xcbglintegrations/libqxcb-egl-integration.so",
+      "bytes": 55880,
+      "sha256": "01088ab95461d805bd558ce9d651e07b20215958f7febf4ec099c710cfcef5e7",
+      "needed": [
+        "libEGL.so.1",
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6XcbQpa.so.6",
+        "libX11-xcb.so.1",
+        "libX11.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxcb-cursor.so.0",
+        "libxcb-icccm.so.4",
+        "libxcb-image.so.0",
+        "libxcb-keysyms.so.1",
+        "libxcb-randr.so.0",
+        "libxcb-render-util.so.0",
+        "libxcb-render.so.0",
+        "libxcb-shape.so.0",
+        "libxcb-shm.so.0",
+        "libxcb-sync.so.1",
+        "libxcb-util.so.1",
+        "libxcb-xfixes.so.0",
+        "libxcb-xkb.so.1",
+        "libxcb.so.1",
+        "libxkbcommon-x11.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/plugins/xcbglintegrations/libqxcb-glx-integration.so",
+      "bytes": 76392,
+      "sha256": "af8bb94f80cdbed024770705f5ce1ec77cd543d379f539bd6463b26dc2ad7caa",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6XcbQpa.so.6",
+        "libX11-xcb.so.1",
+        "libX11.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6",
+        "libxcb-cursor.so.0",
+        "libxcb-glx.so.0",
+        "libxcb-icccm.so.4",
+        "libxcb-image.so.0",
+        "libxcb-keysyms.so.1",
+        "libxcb-randr.so.0",
+        "libxcb-render-util.so.0",
+        "libxcb-render.so.0",
+        "libxcb-shape.so.0",
+        "libxcb-shm.so.0",
+        "libxcb-sync.so.1",
+        "libxcb-util.so.1",
+        "libxcb-xfixes.so.0",
+        "libxcb-xkb.so.1",
+        "libxcb.so.1",
+        "libxkbcommon-x11.so.0",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_ar.qm",
+      "bytes": 104,
+      "sha256": "b11333c520ccd8e375cde20985df402d586a1a95e0796313bbeb9f717d4db22e"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_bg.qm",
+      "bytes": 91,
+      "sha256": "1e22ee126ec9f76031d880285a907b3a0c4510392319ff700dcdee964abbb1ad"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_ca.qm",
+      "bytes": 91,
+      "sha256": "17ab2623c7f6e8def44b3dbcb517544185817d65f1298ddb10ef71136f232bdc"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_cs.qm",
+      "bytes": 95,
+      "sha256": "c585918fb1d4821a054ea40bdcf279f275ca76c88a5793f433dac6a611ac7e8f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_da.qm",
+      "bytes": 91,
+      "sha256": "f6773c672acb73fdef6e092060d69d1e5dfee840012bac912d1e92de28714386"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_de.qm",
+      "bytes": 91,
+      "sha256": "0401c316aa3b50a172eb44a4ff1ec384924073beec7c928ef888ec48e4612688"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_en.qm",
+      "bytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_es.qm",
+      "bytes": 91,
+      "sha256": "648ed4519bc45d7a4779479a7626ea16cf9aa23e93a0b178546cc47bea0591ab"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_fa.qm",
+      "bytes": 84,
+      "sha256": "3f4c989c6b2990d80cc6299408214b31698923b52f154483b3371875de91f88e"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_fi.qm",
+      "bytes": 91,
+      "sha256": "342d01c7eeb234e431d0506821c4cd03c0433115d8d63fee3357be2331858879"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_fr.qm",
+      "bytes": 91,
+      "sha256": "c896a38892a92346b033793d56440993236b23e47e06f3974afdb0552f628387"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_gd.qm",
+      "bytes": 70,
+      "sha256": "49df855a004a17950338af3146466f6df4d5852410bd0b58ea80e0d0203a9d24"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_gl.qm",
+      "bytes": 323590,
+      "sha256": "204a01ac7deb6b5bae193afecbd1e50d18c73bf7d94badeb2bbfdf6123c4ed93"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_he.qm",
+      "bytes": 57,
+      "sha256": "36f01fff2f25e116d4b7af78097b7e49520fd5b7fb6fb120e40be228c05c045f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_ar.qm",
+      "bytes": 8743,
+      "sha256": "222088c9752d1cc3bab985ef2dc77e5ae78578dce18a61ec15b39f02e588163d"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_bg.qm",
+      "bytes": 10599,
+      "sha256": "cbcdd1e0bbae332d80ddb0a286056f17c824fa28d353d7fdf12fc97d9f6fe054"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_ca.qm",
+      "bytes": 7435,
+      "sha256": "fe40962c814a9f489e18d033e4aaabe435232c9bcf760830c6165af507cca80e"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_cs.qm",
+      "bytes": 15297,
+      "sha256": "4ac56fc63e400943bab13f1d4c418502138908e1d488c24aee6131d3d17552aa"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_da.qm",
+      "bytes": 4795,
+      "sha256": "6bb092552a398687119f6d52145f04bf8373977446d8f00c0dcbd56b96829f0f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_de.qm",
+      "bytes": 7569,
+      "sha256": "037bc99abf98571ae9375c2513536c15b571d66406c36c1de447b547ff539c07"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_en.qm",
+      "bytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_es.qm",
+      "bytes": 10704,
+      "sha256": "fd16b279f8cf69077f75e94d90c9c07a2afff3948a579e3789f5ffb5e5f4202d"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_fr.qm",
+      "bytes": 3573,
+      "sha256": "875ee2dcdc64e3dea888d84048e382d3921a175f12847de2e6b1cb12ad9add50"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_gl.qm",
+      "bytes": 10891,
+      "sha256": "7399a248609974773f60866c87b78ea7dfbc4f750313d692f7886cd763883c9f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_hr.qm",
+      "bytes": 5170,
+      "sha256": "8c8cc3c5b1ab2b074f82937001b896603420ef75592b3b78172177360dd7ea61"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_hu.qm",
+      "bytes": 7255,
+      "sha256": "7be32e015119c969453abb6e8f3fb377963a69fafb10c27b796737b5eb283eaf"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_it.qm",
+      "bytes": 10612,
+      "sha256": "316fe8d0815e2b4b396895beb38ef1a40431915b5e054df80f4c0cd556f26e4b"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_ja.qm",
+      "bytes": 7917,
+      "sha256": "ae603b2c0d434d40cde433ffcba65f9ee27978a9e19316007be7fe782a5b8b47"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_ka.qm",
+      "bytes": 7091,
+      "sha256": "159c74f94b384b5ee6afdf38b6cfc4806bc99ecf73be02d4a7021d4ceba7ec7e"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_kk.qm",
+      "bytes": 6971,
+      "sha256": "de92b7bc46998da4becb07f810e7947f0e22d5f7bf152b8bd7be90375027dfa0"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_ko.qm",
+      "bytes": 5708,
+      "sha256": "f11c64694e8e34e1d2c46c1a1d15d6ba9f2db7b61de4fdf54eca5ab977c3e052"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_nl.qm",
+      "bytes": 5087,
+      "sha256": "44a8a0daf775d14352180052d13f623814d7bdf98e2c5c80144b7bf74214e3b0"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_nn.qm",
+      "bytes": 6934,
+      "sha256": "4c8a7213942078e4f72f5babd26c41b77ace70189714a58b5504a7d5ad0193dc"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_pl.qm",
+      "bytes": 9673,
+      "sha256": "cc6cb4d8c54086224672f2e49e623c8cb7c0c1cd65b8d5ecd42fc9ba3a6065bd"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_pt_BR.qm",
+      "bytes": 16030,
+      "sha256": "b4015c5d519b4fe93c00bf734d1742e4f0094d89862664d548eb64a46a2feae7"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_ru.qm",
+      "bytes": 7288,
+      "sha256": "557b644e6da5f1ec720ef93965617087e4d1f40b2494cc5aa524cf3796108de7"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_sk.qm",
+      "bytes": 10388,
+      "sha256": "f41e33e1d790bd0d3eb180f1f875bc191fe74773628f25c2cad95e1402e66867"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_sl.qm",
+      "bytes": 10363,
+      "sha256": "2ec955e662407ebcd8dcdae5aaa21e4108e0b5b0aee0e9db712c27072943535f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_sv.qm",
+      "bytes": 6934,
+      "sha256": "95bdb03dbaa6dbdfda46c249e9ccce9a353f71ddb8b112961e8b005b2c60b13c"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_tr.qm",
+      "bytes": 6723,
+      "sha256": "81da2f88cd624097581f2d29b10311796bcd9ab289e65883346d276110542d28"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_uk.qm",
+      "bytes": 9750,
+      "sha256": "497cfc473684692ee44d7a3795e8fb2270c57069fd9eb98a615dd29ab9be8a7c"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_zh_CN.qm",
+      "bytes": 5115,
+      "sha256": "e256d1f6034a5a5521c62f129f91731216e474f71e1d9caea3d3dcb11b670deb"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_help_zh_TW.qm",
+      "bytes": 5160,
+      "sha256": "40112812abb43853d678cc6d97729f21f21b3a7321c827fc9d18f6c936447d1e"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_hr.qm",
+      "bytes": 102,
+      "sha256": "fc9e4146f33be3d09b234be01e56235d3037d8d82d64f0700b4d4a6e253a61a7"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_hu.qm",
+      "bytes": 84,
+      "sha256": "c2fa649f167cdb801d1cc0cb69c1d93594fd5bf8c0b7e79b969935da5c3e19aa"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_it.qm",
+      "bytes": 91,
+      "sha256": "9e7a18bc20ebeec54baaaf41c918a74534511271f796dffffd0f9b9ec31c68d3"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_ja.qm",
+      "bytes": 84,
+      "sha256": "0f5fe50452947d1ee9755249d860354bff6977279b4c496a5bc77e5b89dd745e"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_ka.qm",
+      "bytes": 94,
+      "sha256": "00b67c6dfc255079b5b98a5640f82519c96b2520a028682fba4078b39d743eaa"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_kk.qm",
+      "bytes": 86,
+      "sha256": "23f7ccad75b8b2d70eb0ed0fc910dacc667e9ff65ed1e328c65263ad2d172cda"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_ko.qm",
+      "bytes": 84,
+      "sha256": "1d254b535e1cb35cbcad8210b15b89f4488159826bf35b4504696263dd102fa3"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_lg.qm",
+      "bytes": 57,
+      "sha256": "6ba668501f4c040c66da1bdc022362da3c8cf663da6aa484cbdb599028da98ed"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_lt.qm",
+      "bytes": 165383,
+      "sha256": "47eb5f97467df769261421d54a5bea1131c9fb9b6388791d38bb6574335b64bf"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_lv.qm",
+      "bytes": 63,
+      "sha256": "addeca285282338294f24ca50d37d08a5f68d3785d0a94af86dd4ec8f2a3b449"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_nl.qm",
+      "bytes": 91,
+      "sha256": "39e870cbd25c0f97fa9b1828d5ea1ed9849857a2e26c5321b3f13c76be8f0548"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_nn.qm",
+      "bytes": 91,
+      "sha256": "4e544e23f75eafe1553dc896973db23b5795cd243786d5c653cc0f36a46ca74f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_pl.qm",
+      "bytes": 99,
+      "sha256": "e6890afa0caf0f6db0248e4c94f6016b8ec8bc266f1e0e9b8f01e8ea912cf968"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_pt_BR.qm",
+      "bytes": 106,
+      "sha256": "0e24c58e35271853f8cdfb3f0f7b0741b5a9a588e43cdec62ae85a3842771e0a"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_pt_PT.qm",
+      "bytes": 70334,
+      "sha256": "2c1e7bbf5168a64b43752dd4c547601c0bde6d610f8671fa3e3af38597e84783"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_ru.qm",
+      "bytes": 102,
+      "sha256": "1b388e2d6d1bd405603e794e498c6d7ec5f5a5ad819243546f6399181da36758"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_sk.qm",
+      "bytes": 95,
+      "sha256": "840c3b01c89df976fc1d2e5bfc6fc84b65666b8a3ceb4cbf5aa0c22af3d2a383"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_sl.qm",
+      "bytes": 228428,
+      "sha256": "c44e0313a9414cc0e490b65b0c036fa11bca959353b228886547bc2c8492034f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_sv.qm",
+      "bytes": 91,
+      "sha256": "daaae448e0814b469ac3d7a91096fde15491600a6b8bc6c01508425fb5e8b3ec"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_tr.qm",
+      "bytes": 84,
+      "sha256": "59e8a0c411be3b0802a68561b090f182099d6b75c4fe46f398e55f11528e11b9"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_uk.qm",
+      "bytes": 102,
+      "sha256": "053ec1f677c4dba48c6a97eb28f4fc78c1511324d1843d7f4cec2c7c00a66145"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_zh_CN.qm",
+      "bytes": 99,
+      "sha256": "c0e29d32c9540a7e78643b74214e633c56f6ab11f018e516629f2c11b1fb09fc"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qt_zh_TW.qm",
+      "bytes": 99,
+      "sha256": "24e226954491689549a1a1990db3b8cb78888008d8163b2fd2442b772b6d1b5f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_ar.qm",
+      "bytes": 160017,
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_bg.qm",
+      "bytes": 165337,
+      "sha256": "e448ac9e3f16c29eb27af3012efe21052daa78fabfb34cd6dff2f69ee3bd3cdb"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_ca.qm",
+      "bytes": 269007,
+      "sha256": "5298532fc52ffbc4e2c549f277151a61e741921c834286f7c04d3753677b6b04"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_cs.qm",
+      "bytes": 174701,
+      "sha256": "03028b42df5479270371e4c3bdc7df2f56cbbe6dda956a2864ac6f6415861fe8"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_da.qm",
+      "bytes": 181387,
+      "sha256": "7d1e5ca3310b54d104c19bf2abd402b38e584e87039a70e153c4a9af74b25c22"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_de.qm",
+      "bytes": 224345,
+      "sha256": "a1483bae0385c380edad72b818ce7c2f54ba617ba4c709b2a34a76886d5b5f3d"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_en.qm",
+      "bytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_es.qm",
+      "bytes": 165170,
+      "sha256": "4ffda56ba3bb5414ab0482d1dde64a6f226e3488f6b7f3f11a150e01f53fa4c8"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_fa.qm",
+      "bytes": 148156,
+      "sha256": "f78e59b5bdd586181a999034ba418868ed17fe9c05707fb65e523f70e92253d2"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_fi.qm",
+      "bytes": 179941,
+      "sha256": "e47fe13713e184d07fa4495dde0c589b0e8f562e91574a3558a9363443a4fa72"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_fr.qm",
+      "bytes": 159463,
+      "sha256": "314243a55c32679ad473fdfe48dc7d66e973ad0fc8bf2164480c58dddb50c1a7"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_gd.qm",
+      "bytes": 189580,
+      "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_he.qm",
+      "bytes": 138690,
+      "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_hr.qm",
+      "bytes": 149711,
+      "sha256": "bb9eec9a9a652c1340dc75eb2e749be50df00f885b3d6900dfc76799c45b244d"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_hu.qm",
+      "bytes": 205885,
+      "sha256": "98463295539d769c8645a0b7fb95ad38454cfd0b14f36af485513f036ddbbbc6"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_it.qm",
+      "bytes": 161166,
+      "sha256": "7808ed542a7833c4bd94ec8bdfbbca00bb4f2fe15979b9121ce3249323687300"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_ja.qm",
+      "bytes": 129913,
+      "sha256": "2b9581c69b975f59be505b127cd3c19d403ef3d12e0e8386fb97238223e9c1df"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_ka.qm",
+      "bytes": 201105,
+      "sha256": "e55e4b72fa620bebee5297ca59dfe2f49894a1e544f2b7485b1cfd8829289d6f"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_kk.qm",
+      "bytes": 259281,
+      "sha256": "8bab72c453e87489d76cc7efffc57e947cbfa239dee4d6fa113f7b7b8cbd5b86"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_ko.qm",
+      "bytes": 156799,
+      "sha256": "0179ed1b136e1cb3f583351eaa2c545ba3d83a6ee3f82c32505926a1a5f5f183"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_lg.qm",
+      "bytes": 315764,
+      "sha256": "31c0cc4ce13b1d74fe0c19ed0b47638fb31e20c93ee08092533e884007aebfb5"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_lv.qm",
+      "bytes": 153608,
+      "sha256": "846e047573ae40c83671c3ba7f73e27efc24b98c82701da0df9973e574178bb2"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_nl.qm",
+      "bytes": 202861,
+      "sha256": "f61513bcdbb6ad800585f9437a95d018aab17fa12ee414aa31462ff279d8240e"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_nn.qm",
+      "bytes": 196411,
+      "sha256": "f9f2fb7c60e7fcb38bbd3c1314ef122145594265e20b0659ff00004baab13ac7"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_pl.qm",
+      "bytes": 162962,
+      "sha256": "3cf6b5c14d5eb0cf81e9af2066e66b3aa579a6b9b3c323ed670761f6254a8c54"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_pt_BR.qm",
+      "bytes": 290955,
+      "sha256": "3475d61604b938d459949801a906dbd34a8ca824ade94120015d676e208da859"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_ru.qm",
+      "bytes": 203767,
+      "sha256": "3da6605668f9178d11a838c4515478084dcfb4f9cf22f99d7a92b492db9c224b"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_sk.qm",
+      "bytes": 125763,
+      "sha256": "d586ae2c314074cf398417fdecb40709d5478dfeb0a67c2fe60d509ee9b59ed7"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_sv.qm",
+      "bytes": 249963,
+      "sha256": "5a2178dd2c03cc4516697f1fb0049649c9ed53f5cde6b937786733dae06aeda8"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_tr.qm",
+      "bytes": 248720,
+      "sha256": "353fdfd7165659a49212e7a25bf91c0a71588e52c836f7496640f26782414634"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_uk.qm",
+      "bytes": 158274,
+      "sha256": "51b8ff55b37dc5907d637a8ddda12fbe816852b0244c74eb4f0fb84867a786e0"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_zh_CN.qm",
+      "bytes": 147222,
+      "sha256": "0481a9b92a6f0578400e960a7d5ee70217a6a450eaf7f98b7d32b8dbd0d58616"
+    },
+    {
+      "path": "_internal/PySide6/Qt/translations/qtbase_zh_TW.qm",
+      "bytes": 126185,
+      "sha256": "21012b2b427f8d09d31ce9cae582ca27955b478ca3dc2ec18a3068d808638c6a"
+    },
+    {
+      "path": "_internal/PySide6/QtCore.abi3.so",
+      "bytes": 4211464,
+      "sha256": "c69ab7ddf99eaf37df6c9ed9498bba9f3678d8544de3921c13d046c31f0d484b",
+      "needed": [
+        "libQt6Core.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpyside6.abi3.so.6.12",
+        "libshiboken6.abi3.so.6.12",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.32",
+        "2.34"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/QtDBus.abi3.so",
+      "bytes": 332136,
+      "sha256": "c74ee1c00716b866f91f2bd083c381e0fffcb013830e05e8ecece5f33e587c0e",
+      "needed": [
+        "libQt6Core.so.6",
+        "libQt6DBus.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpyside6.abi3.so.6.12",
+        "libshiboken6.abi3.so.6.12",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/QtGui.abi3.so",
+      "bytes": 4791208,
+      "sha256": "a4ebd89caef6afa4944f73436b47203fcbf5923d7fe2a8a90f1da00aeb4a4f27",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpyside6.abi3.so.6.12",
+        "libshiboken6.abi3.so.6.12",
+        "libstdc++.so.6",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/QtWidgets.abi3.so",
+      "bytes": 6110456,
+      "sha256": "4543cab2c4a8edee5bc4c818dc0ba2f8552ffa6b10a4b4ab02d8536f10400115",
+      "needed": [
+        "libGL.so.1",
+        "libQt6Core.so.6",
+        "libQt6Gui.so.6",
+        "libQt6Widgets.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpyside6.abi3.so.6.12",
+        "libshiboken6.abi3.so.6.12",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/PySide6/libpyside6.abi3.so.6.12",
+      "bytes": 300712,
+      "sha256": "ec683d54c92945d3e1fa400c034e02600e812a274620d048203a885e26bc1776",
+      "needed": [
+        "ld-linux-x86-64.so.2",
+        "libQt6Core.so.6",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libshiboken6.abi3.so.6.12",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3",
+        "2.32",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/base_library.zip",
+      "bytes": 1426316,
+      "sha256": "afa85f7c25a8bd4be259f6c621fdb7bedf5fb9f014db96300a6813b831458dd5"
+    },
+    {
+      "path": "_internal/libX11-xcb.so.1",
+      "bytes": 11024,
+      "sha256": "96fc7b6c0b80dca371105ce1409096d8e5400f09b0f968e4bf4dd3df536e5b51",
+      "needed": [],
+      "glibc_versions": []
+    },
+    {
+      "path": "_internal/libX11.so.6",
+      "bytes": 1412720,
+      "sha256": "1d2e454493d37a1e75e14d447d32b5489490cac57169861bd2fcd4f4e2df3887",
+      "needed": [
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.15",
+        "2.2.5",
+        "2.26",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXau.so.6",
+      "bytes": 19632,
+      "sha256": "f097d73b4ad3023ef226c8f671a538e7b605650163f3375fe314c163d610bff3",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.25",
+        "2.3.4",
+        "2.33",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXcomposite.so.1",
+      "bytes": 15400,
+      "sha256": "2eba2812d30c3938877bddf827209c2b1f73386631e7c8450b638404f5da3541",
+      "needed": [
+        "libX11.so.6",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXcursor.so.1",
+      "bytes": 52864,
+      "sha256": "f06ecf01804c2c0502e02d7385145ef16eadcafe234039c8a3b2df113a11db5e",
+      "needed": [
+        "libX11.so.6",
+        "libXfixes.so.3",
+        "libXrender.so.1",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXdamage.so.1",
+      "bytes": 11392,
+      "sha256": "9a0d34d0f80ad27a4326faaf8bdf3105e91a2047471c95b962f1c5a7412f1c97",
+      "needed": [
+        "libX11.so.6",
+        "libXfixes.so.3",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXext.so.6",
+      "bytes": 79944,
+      "sha256": "d5e5b1e594780db80f18a59e10948c69bdd96957d81f0b2fb307dc54adb25bc1",
+      "needed": [
+        "libX11.so.6",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.26",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXfixes.so.3",
+      "bytes": 27968,
+      "sha256": "ee2abafa12cad0902c527e6857adb610a94f4f1e388aa08c55303c630b87bd3a",
+      "needed": [
+        "libX11.so.6",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXi.so.6",
+      "bytes": 78120,
+      "sha256": "0891909f6622d3ec2714a6e0e4cbb4789b74ad872414a9eb67f5e9e8f23c7737",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXinerama.so.1",
+      "bytes": 11544,
+      "sha256": "b6618e2c8709c7828d46a2e72b9df3276e3f78f7ae48327d69661fc7c850b3ae",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXrandr.so.2",
+      "bytes": 49112,
+      "sha256": "cf1bcac7bac238c03443fd786177d7439ef26499f280cd1928d2711a72f7ae0f",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libXrender.so.1",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libXrender.so.1",
+      "bytes": 48808,
+      "sha256": "0be188f9cf7fe83ce38f76f34f10302a41e2fb5148484a0a38378e5eea1996ad",
+      "needed": [
+        "libX11.so.6",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libatk-1.0.so.0",
+      "bytes": 156216,
+      "sha256": "26ad0cdf43dac5927ffc8de9580088a93da7388ec8e61c23dba7a5658cf0cf26",
+      "needed": [
+        "libc.so.6",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libatk-bridge-2.0.so.0",
+      "bytes": 257112,
+      "sha256": "30d6d34d0fc3586666b1a3dd5620476433f2f782353e443ee48ded2ecaa0a1e1",
+      "needed": [
+        "libatk-1.0.so.0",
+        "libatspi.so.0",
+        "libc.so.6",
+        "libdbus-1.so.3",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libatspi.so.0",
+      "bytes": 260304,
+      "sha256": "4ecf60ee9fc088aac075b3c888dcf11aa5ef152aba1d9e711c7566495eb3b006",
+      "needed": [
+        "libX11.so.6",
+        "libXi.so.6",
+        "libc.so.6",
+        "libdbus-1.so.3",
+        "libgcc_s.so.1",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libblkid.so.1",
+      "bytes": 262456,
+      "sha256": "faa3c9b3a8fff0d3cc836db3b0a2693f5bd24f05288fe6f79ad6a9c3f6036c4f",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.26",
+        "2.28",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.38",
+        "2.4",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/libbrotlicommon.so.1",
+      "bytes": 138288,
+      "sha256": "b6d9339a53dead246b465c14ae24b2da19542608c920e7b030453d58a1c10844",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/libbrotlidec.so.1",
+      "bytes": 56784,
+      "sha256": "5a3925de59317b5a95611ba7f728cee4e01c91c7f65ef173be2a259dd6e4feeb",
+      "needed": [
+        "libbrotlicommon.so.1",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libbz2.so.1",
+      "bytes": 80472,
+      "sha256": "9911b43735fe91042f694df846ec738b3945cfebed8823c0fc4b61fd9c777db9",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libcairo-gobject.so.2",
+      "bytes": 31648,
+      "sha256": "da1eed2a674f4b76398179d07d1c5a0cad099910ac5011d10dd31a3cba5e2530",
+      "needed": [
+        "libcairo.so.2",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0"
+      ],
+      "glibc_versions": []
+    },
+    {
+      "path": "_internal/libcairo.so.2",
+      "bytes": 1371104,
+      "sha256": "d89988171869bc7ad53523a4d13000222ba973b93c4182b4b37115dfef9543bc",
+      "needed": [
+        "libX11.so.6",
+        "libXext.so.6",
+        "libXrender.so.1",
+        "libc.so.6",
+        "libfontconfig.so.1",
+        "libfreetype.so.6",
+        "libm.so.6",
+        "libpixman-1.so.0",
+        "libpng16.so.16",
+        "libxcb-render.so.0",
+        "libxcb-shm.so.0",
+        "libxcb.so.1",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.11",
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.28",
+        "2.29",
+        "2.3",
+        "2.3.4",
+        "2.34",
+        "2.35",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libcloudproviders.so.0",
+      "bytes": 103104,
+      "sha256": "d628fda34b1cbd5031d3851ac34a93e914e1d681d640ee7aa0da5b608960a9f4",
+      "needed": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libcom_err.so.2",
+      "bytes": 19864,
+      "sha256": "30f6b8553e9258559a5f855baad770ed3dd8bd75fd4699dc201adbc817cc2655",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.17",
+        "2.2.5",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libcrypto.so.4",
+      "bytes": 5749928,
+      "sha256": "d7a694d6c0504aab4cbaf1d209d19c846f1407e4356f9f13a8c8638b51fa3f90",
+      "needed": [
+        "libc.so.6",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.12",
+        "2.14",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.25",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libdatrie.so.1",
+      "bytes": 32512,
+      "sha256": "16cc630f7936e97f92b063deca735a43b3285942dcba70c6ffe05a16707a1e4a",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4",
+        "2.7"
+      ]
+    },
+    {
+      "path": "_internal/libdbus-1.so.3",
+      "bytes": 364832,
+      "sha256": "f48f0e3d7d9948f98210922124c16817bf77124258e7491a7203a6ccf361607a",
+      "needed": [
+        "libc.so.6",
+        "libsystemd.so.0"
+      ],
+      "glibc_versions": [
+        "2.10",
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.25",
+        "2.28",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libepoxy.so.0",
+      "bytes": 1130688,
+      "sha256": "9ad94bc4fdb2a6f3ccf390590db9c7e947c84946713b5a29152c0ebc03b70436",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.34",
+        "2.4",
+        "2.7"
+      ]
+    },
+    {
+      "path": "_internal/libffi.so.8",
+      "bytes": 61496,
+      "sha256": "7ce42bdd960a488576dfe79458f1255d211cbc5375eaf1fd24fe264aea80d389",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.27",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libfontconfig.so.1",
+      "bytes": 513176,
+      "sha256": "31c2adfa74cfccc409b575119e6cd357eddedc0f0ff7010a6b71630a116386d8",
+      "needed": [
+        "libc.so.6",
+        "libfreetype.so.6",
+        "libxml2.so.16"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.28",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.38",
+        "2.4",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/libfreetype.so.6",
+      "bytes": 910208,
+      "sha256": "b58390b37737797e260125881c48c290e2b4a3930fbfe32706371b0632ca8f2f",
+      "needed": [
+        "libbrotlidec.so.1",
+        "libbz2.so.1",
+        "libc.so.6",
+        "libharfbuzz.so.0",
+        "libpng16.so.16",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.11",
+        "2.14",
+        "2.2.5",
+        "2.33",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libfribidi.so.0",
+      "bytes": 126560,
+      "sha256": "2bf48ea090999e190a6349cb78143c9c551b4fbc103605ae266d3c04b188e047",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libgcc_s.so.1",
+      "bytes": 186592,
+      "sha256": "91e0dd0a46dcb5abb5c704a73cac0b841edffcfad3f1bc211b2b28acf4a58033",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.2",
+        "2.34",
+        "2.35"
+      ]
+    },
+    {
+      "path": "_internal/libgdk-3.so.0",
+      "bytes": 1075600,
+      "sha256": "a7d24bddb68b427efebe937b9d26e558a4f81d84e0bcb66803b120f30bd61542",
+      "needed": [
+        "libX11.so.6",
+        "libXcomposite.so.1",
+        "libXcursor.so.1",
+        "libXdamage.so.1",
+        "libXext.so.6",
+        "libXfixes.so.3",
+        "libXi.so.6",
+        "libXinerama.so.1",
+        "libXrandr.so.2",
+        "libc.so.6",
+        "libcairo-gobject.so.2",
+        "libcairo.so.2",
+        "libepoxy.so.0",
+        "libfontconfig.so.1",
+        "libfribidi.so.0",
+        "libgdk_pixbuf-2.0.so.0",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libm.so.6",
+        "libpango-1.0.so.0",
+        "libpangocairo-1.0.so.0",
+        "libwayland-client.so.0",
+        "libwayland-cursor.so.0",
+        "libwayland-egl.so.1",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.26",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libgdk_pixbuf-2.0.so.0",
+      "bytes": 199272,
+      "sha256": "6c6371a41619e824325138e25a7a5d42b8f68c274646bb51d3069cc9374162da",
+      "needed": [
+        "libc.so.6",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libglycin-2.so.0",
+        "libgmodule-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libgio-2.0.so.0",
+      "bytes": 2005072,
+      "sha256": "5c6e0d1dff692fd435d8d8ac110e54b5d196f2b7faf7427bf4ad573bc1cbb2e0",
+      "needed": [
+        "libc.so.6",
+        "libglib-2.0.so.0",
+        "libgmodule-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libmount.so.1",
+        "libselinux.so.1",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.10",
+        "2.12",
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.27",
+        "2.28",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/libglib-2.0.so.0",
+      "bytes": 1474136,
+      "sha256": "fcd8a7af92fae8c79b02931f3fe2769fac0116a059c412d2d41ce34f9e813e8c",
+      "needed": [
+        "libc.so.6",
+        "libpcre2-8.so.0"
+      ],
+      "glibc_versions": [
+        "2.10",
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.28",
+        "2.3",
+        "2.3.3",
+        "2.3.4",
+        "2.32",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4",
+        "2.43",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/libglycin-2.so.0",
+      "bytes": 5066840,
+      "sha256": "f44b3d9501fd796d440f63ba31dcfd6f2fd3822b7189202bc2252a56879ae76b",
+      "needed": [
+        "ld-linux-x86-64.so.2",
+        "libc.so.6",
+        "libfontconfig.so.1",
+        "libgcc_s.so.1",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libseccomp.so.2"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.15",
+        "2.17",
+        "2.18",
+        "2.2.5",
+        "2.25",
+        "2.27",
+        "2.28",
+        "2.29",
+        "2.3",
+        "2.3.4",
+        "2.30",
+        "2.33",
+        "2.34",
+        "2.39",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/libgmodule-2.0.so.0",
+      "bytes": 19688,
+      "sha256": "18b239cd0aaaec49b67c28b32e5878f8a69f9baedb4c34754e992393767f1873",
+      "needed": [
+        "libc.so.6",
+        "libglib-2.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.34",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libgobject-2.0.so.0",
+      "bytes": 405200,
+      "sha256": "f3a84b8c7d85fed517a8872f5ecf0d37d0ca4b7064d268475d2a9bea67f02531",
+      "needed": [
+        "libc.so.6",
+        "libffi.so.8",
+        "libglib-2.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libgraphite2.so.3",
+      "bytes": 128368,
+      "sha256": "a981193f1ada35518da09883ca7e9177eaa744ed748925ec7edba6c7a06b28d5",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libgssapi_krb5.so.2",
+      "bytes": 375608,
+      "sha256": "343726ae584b7cdebb88a656c29160aac2fc3b8514b16889203912a5802b2961",
+      "needed": [
+        "libc.so.6",
+        "libcom_err.so.2",
+        "libcrypto.so.4",
+        "libk5crypto.so.3",
+        "libkeyutils.so.1",
+        "libkrb5.so.3",
+        "libkrb5support.so.0",
+        "libresolv.so.2"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.25",
+        "2.27",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.38",
+        "2.4",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/libgthread-2.0.so.0",
+      "bytes": 11088,
+      "sha256": "0f8b4aef488337f3b442a555074f2518ac10752b382d3b819943ab4bc766948e",
+      "needed": [
+        "libglib-2.0.so.0"
+      ],
+      "glibc_versions": []
+    },
+    {
+      "path": "_internal/libgtk-3.so.0",
+      "bytes": 7685352,
+      "sha256": "f388e161476f473fc9412b8a9d8839a2cee2004a1cba5421651bf7db675238fa",
+      "needed": [
+        "libX11.so.6",
+        "libXfixes.so.3",
+        "libXi.so.6",
+        "libatk-1.0.so.0",
+        "libatk-bridge-2.0.so.0",
+        "libc.so.6",
+        "libcairo-gobject.so.2",
+        "libcairo.so.2",
+        "libcloudproviders.so.0",
+        "libepoxy.so.0",
+        "libfontconfig.so.1",
+        "libfribidi.so.0",
+        "libgdk-3.so.0",
+        "libgdk_pixbuf-2.0.so.0",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgmodule-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libharfbuzz.so.0",
+        "libm.so.6",
+        "libpango-1.0.so.0",
+        "libpangocairo-1.0.so.0",
+        "libpangoft2-1.0.so.0",
+        "libtinysparql-3.0.so.0",
+        "libwayland-client.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.29",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libharfbuzz.so.0",
+      "bytes": 1356768,
+      "sha256": "ab803a5b04d19c6b83c50b02e03fc19d2691a10dbce00c09287aed35512b8a06",
+      "needed": [
+        "libc.so.6",
+        "libfreetype.so.6",
+        "libglib-2.0.so.0",
+        "libgraphite2.so.3",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.35",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libjson-glib-1.0.so.0",
+      "bytes": 182544,
+      "sha256": "ea2c5b5c4a24824bf2367e20a0ac22b7d9d059085f2058dc5132bd0b8058c952",
+      "needed": [
+        "libc.so.6",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libk5crypto.so.3",
+      "bytes": 95256,
+      "sha256": "f0213a463994a57b83eb4f74fced53b3ab1cd5156441dcddbef04b7ec3f59f57",
+      "needed": [
+        "libc.so.6",
+        "libcrypto.so.4",
+        "libkeyutils.so.1",
+        "libkrb5support.so.0",
+        "libresolv.so.2"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.25",
+        "2.3.4",
+        "2.33",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libkeyutils.so.1",
+      "bytes": 24184,
+      "sha256": "4510f6eff39786750063968cc2a8e33dab016f1c9fcb07a261b4c0498a8a14b1",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libkrb5.so.3",
+      "bytes": 870024,
+      "sha256": "71f562f06f3d280fa9bc75d0e45ddd55cdef33f5b46ee04e80a5c519fdd9a1a8",
+      "needed": [
+        "libc.so.6",
+        "libcom_err.so.2",
+        "libcrypto.so.4",
+        "libk5crypto.so.3",
+        "libkeyutils.so.1",
+        "libkrb5support.so.0",
+        "libresolv.so.2"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.25",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/libkrb5support.so.0",
+      "bytes": 66384,
+      "sha256": "ba565845c5aff5942d38551d1d09ad7fe7e598ad6388cc6cd05e3f5fafdcd661",
+      "needed": [
+        "libc.so.6",
+        "libcrypto.so.4",
+        "libkeyutils.so.1",
+        "libresolv.so.2",
+        "libselinux.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.25",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/liblzma.so.5",
+      "bytes": 223848,
+      "sha256": "1d6722b63c8d4cca0d83f995e62d979434e6282a961c65c2f44d72b80cd1fcc8",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.3.2",
+        "2.3.4",
+        "2.32",
+        "2.34",
+        "2.4",
+        "2.6"
+      ]
+    },
+    {
+      "path": "_internal/libmount.so.1",
+      "bytes": 392096,
+      "sha256": "dbb287fa0f926f99ea9a6095fd671e9ecbaee80eefbe9cfea94ad367c2d2a0c7",
+      "needed": [
+        "libblkid.so.1",
+        "libc.so.6",
+        "libselinux.so.1",
+        "libsystemd.so.0"
+      ],
+      "glibc_versions": [
+        "2.13",
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.26",
+        "2.28",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.36",
+        "2.38",
+        "2.4",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/libmpdec.so.4",
+      "bytes": 208224,
+      "sha256": "a332cb6924f5458dd9c1e333393c1723d685f51f93b37aca7ef74d841cc19fe1",
+      "needed": [
+        "libc.so.6",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libpango-1.0.so.0",
+      "bytes": 455368,
+      "sha256": "bd86f1293afde003f50d9b8c94f5eec5bd392a3ffadf057bc9d4b14dccc3336c",
+      "needed": [
+        "libc.so.6",
+        "libfribidi.so.0",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libharfbuzz.so.0",
+        "libm.so.6",
+        "libthai.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libpangocairo-1.0.so.0",
+      "bytes": 77784,
+      "sha256": "86e2f528469888e2900417e6e545f3b7dc4d330013774b45844297731a15858f",
+      "needed": [
+        "libc.so.6",
+        "libcairo.so.2",
+        "libfontconfig.so.1",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libharfbuzz.so.0",
+        "libm.so.6",
+        "libpango-1.0.so.0",
+        "libpangoft2-1.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.35",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libpangoft2-1.0.so.0",
+      "bytes": 115352,
+      "sha256": "aae35f2098771ea6af3e34426b71d04f398629cbe3e0d9fdfcdc4e6c9077378b",
+      "needed": [
+        "libc.so.6",
+        "libfontconfig.so.1",
+        "libfreetype.so.6",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libharfbuzz.so.0",
+        "libpango-1.0.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libpcre2-8.so.0",
+      "bytes": 724264,
+      "sha256": "8d7220ad2d2032f7935001098c5f8397a30fe431a65a694b51cdc57002dc9fde",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libpixman-1.so.0",
+      "bytes": 733400,
+      "sha256": "b5faacad74f87db6ccc4dc4317dc3478e1c71eb6d804d771b918f70299f2f308",
+      "needed": [
+        "libc.so.6",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.29",
+        "2.3.4",
+        "2.4",
+        "2.43"
+      ]
+    },
+    {
+      "path": "_internal/libpng16.so.16",
+      "bytes": 253336,
+      "sha256": "aa2a2a0050ce04626e6b57726d80b22eb4b0b24f1cbbae8a2823c30995685bfa",
+      "needed": [
+        "libc.so.6",
+        "libm.so.6",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.11",
+        "2.14",
+        "2.2.5",
+        "2.29",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libpython3.15.so.1.0",
+      "bytes": 7396856,
+      "sha256": "448660fe8eeefaa1967b9f2c0a8ea84a7b5b9992731eab593fca5485bcce63e6",
+      "needed": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.10",
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.25",
+        "2.26",
+        "2.27",
+        "2.28",
+        "2.29",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.32",
+        "2.33",
+        "2.34",
+        "2.35",
+        "2.38",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/libseccomp.so.2",
+      "bytes": 176744,
+      "sha256": "d2396adcb7bad72c2c26eb7dce945e2ecb73920b73e64ad4020cbe80eb3b2345",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libselinux.so.1",
+      "bytes": 209032,
+      "sha256": "41579067440ce593b606999241a6343db867e4c9c3e2b6e1e96348ab6a9cab75",
+      "needed": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libpcre2-8.so.0"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.23",
+        "2.26",
+        "2.28",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.30",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/libsqlite3.so.0",
+      "bytes": 1671176,
+      "sha256": "9daeea3cc4f8e27aad79126cb0582159fcf5d984346e5518238da8ae7dc28343",
+      "needed": [
+        "libc.so.6",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.28",
+        "2.29",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4",
+        "2.44"
+      ]
+    },
+    {
+      "path": "_internal/libssl.so.4",
+      "bytes": 1114936,
+      "sha256": "7941af75795fa28c8284295fdcb53553d8f214c4e3ecc93c2dcc289908c80726",
+      "needed": [
+        "libc.so.6",
+        "libcrypto.so.4"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libstdc++.so.6",
+      "bytes": 2885072,
+      "sha256": "baa3610188cd93cec0d71ed1925b532dc3bc286637fa5a9b4e013cce1c49ab2b",
+      "needed": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.17",
+        "2.18",
+        "2.2.5",
+        "2.25",
+        "2.26",
+        "2.3",
+        "2.3.2",
+        "2.32",
+        "2.33",
+        "2.34",
+        "2.36",
+        "2.38",
+        "2.4",
+        "2.6"
+      ]
+    },
+    {
+      "path": "_internal/libsystemd.so.0",
+      "bytes": 1380160,
+      "sha256": "4680234abdcfb0abaca4d4ba4628f60af634bb261612408565e5af12ee005542",
+      "needed": [
+        "libc.so.6",
+        "libgcc_s.so.1"
+      ],
+      "glibc_versions": [
+        "2.10",
+        "2.14",
+        "2.16",
+        "2.17",
+        "2.2.5",
+        "2.25",
+        "2.26",
+        "2.27",
+        "2.28",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.30",
+        "2.32",
+        "2.33",
+        "2.34",
+        "2.4",
+        "2.5",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/libthai.so.0",
+      "bytes": 46176,
+      "sha256": "7600e5b319a0c986aed145459305b1a96b33fca30e1fbb11dad82c84e84a9df6",
+      "needed": [
+        "libc.so.6",
+        "libdatrie.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libtinysparql-3.0.so.0",
+      "bytes": 906744,
+      "sha256": "bac595e73b9399dc5b7d5128a1fc9214c037340cd55595288ab99d7fd78a365a",
+      "needed": [
+        "libc.so.6",
+        "libgio-2.0.so.0",
+        "libglib-2.0.so.0",
+        "libgmodule-2.0.so.0",
+        "libgobject-2.0.so.0",
+        "libjson-glib-1.0.so.0",
+        "libm.so.6",
+        "libsqlite3.so.0",
+        "libxml2.so.16"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libuuid.so.1",
+      "bytes": 36696,
+      "sha256": "be9b46a14a7200ef03bf4f1096de9abfb8663b248b87b1b250598b9f35f4b8bc",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.25",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-cursor.so.0",
+      "bytes": 24968,
+      "sha256": "defe9af6ed2977f2f9a301fcdfe8951f608b2cd9d8139c6cdd1e9d86cb28f6c8",
+      "needed": [
+        "libc.so.6",
+        "libxcb-image.so.0",
+        "libxcb-render-util.so.0",
+        "libxcb-render.so.0",
+        "libxcb-shm.so.0",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3",
+        "2.38",
+        "2.4",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-glx.so.0",
+      "bytes": 110128,
+      "sha256": "a7cb6af73060828ee45f86ba0001149e4b6183405c8eed5dc6ca87a37c854fbf",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-icccm.so.4",
+      "bytes": 23488,
+      "sha256": "d29b91190e38dfcb0c7113cb8c8920d1e0226b1a87db39b3e63f9bf98e3c2fa5",
+      "needed": [
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-image.so.0",
+      "bytes": 23776,
+      "sha256": "9d9589ec5b3e8953c7ab0d1e6d42f173224a041c8cafeee355b4221baea5fc86",
+      "needed": [
+        "libc.so.6",
+        "libxcb-shm.so.0",
+        "libxcb-util.so.1",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-keysyms.so.1",
+      "bytes": 15424,
+      "sha256": "04a632992bae6ad4bb4d3288f3087b1ad0ab1e34d3a991e47a6a21652eba4875",
+      "needed": [
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-randr.so.0",
+      "bytes": 68816,
+      "sha256": "8bb404fae3a6ed451a0a7bd62006bee4c790e7c6808349c5e9480d544d41876b",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-render-util.so.0",
+      "bytes": 19616,
+      "sha256": "ef60fd6ab7e134e7b63594cb7a8a7ce2fa9e23bae5253d4bcad956a0f80c1db9",
+      "needed": [
+        "libc.so.6",
+        "libxcb-render.so.0",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-render.so.0",
+      "bytes": 56488,
+      "sha256": "d2932a841a77566df7b9e155307acc693a00d7b599055b1a9da1eda7047ca24d",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-shape.so.0",
+      "bytes": 19648,
+      "sha256": "2392786c5e1a2039d52804563a1d90d1563cb1c8fc0df344bdc6835e788ee4fb",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-shm.so.0",
+      "bytes": 15544,
+      "sha256": "e96fbcba1569948a6c0dc06fd5c45a7996b03f3bc6b73af79250a9769ab1c9d2",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-sync.so.1",
+      "bytes": 27840,
+      "sha256": "a560f5b6ac23f9be4894f31703c48aad7e27d0a536a9401562e65523ee58eb0d",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-util.so.1",
+      "bytes": 23672,
+      "sha256": "9cb01575ef6f125b252c27d8a7ff5b898d28e07263bea20047b89fe6c9643418",
+      "needed": [
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-xfixes.so.0",
+      "bytes": 35952,
+      "sha256": "78058191e6dc5c6c9cd0fe6f7932930158690f8d4f3f14a89b3531f7d86f4968",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxcb-xkb.so.1",
+      "bytes": 122280,
+      "sha256": "95fc9e0b74912b6e9b3709b81ec9b0bd0957b62ac004f22f1cd46e1e0d1a3de4",
+      "needed": [
+        "libXau.so.6",
+        "libc.so.6",
+        "libxcb.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxkbcommon-x11.so.0",
+      "bytes": 40328,
+      "sha256": "cf5f870375b6c13a37532d7cb31c69db3802af6b3564d7e109ee566ab5f8ea22",
+      "needed": [
+        "libc.so.6",
+        "libxcb-xkb.so.1",
+        "libxcb.so.1",
+        "libxkbcommon.so.0"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libxkbcommon.so.0",
+      "bytes": 388616,
+      "sha256": "e26f44dd67b57cc2d632d51db87890480e76826fc8223f16cc73c94dd64f1eee",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.17",
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.33",
+        "2.38",
+        "2.4",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/libxml2.so.16",
+      "bytes": 1361368,
+      "sha256": "06b1884fd69ed14a74e36dd0f20455be9ea4d0b44a731a5483aa812551418eda",
+      "needed": [
+        "libc.so.6",
+        "libm.so.6",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.25",
+        "2.29",
+        "2.3",
+        "2.3.2",
+        "2.3.4",
+        "2.33",
+        "2.34",
+        "2.38",
+        "2.4",
+        "2.7"
+      ]
+    },
+    {
+      "path": "_internal/libz.so.1",
+      "bytes": 169536,
+      "sha256": "bcc97bb783dd4986a54482af2182841712728646ed19236aac3f4aad6605e172",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/libzstd.so.1",
+      "bytes": 959400,
+      "sha256": "fbcf5cff976a8f4e047a3978839e22f422598390112665703602304bf0e7d781",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.2",
+        "2.3.4",
+        "2.34",
+        "2.4",
+        "2.8"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_bisect.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 24664,
+      "sha256": "51df43b83587ffa8b1d62d765ec6013a2b7770f751481550e1b8d08c88af35d0",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_blake2.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 82856,
+      "sha256": "df51696cbc3d6860769b54985bafebba219acd60f5bc02b00c63a7e5dcfd81d9",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.16",
+        "2.2.5",
+        "2.25",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_bz2.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 25048,
+      "sha256": "b4c7458fa19debd3f62a0ae0433ba3f24cab517e1583925685ec64ec277caddf",
+      "needed": [
+        "libbz2.so.1",
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_codecs_cn.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 147168,
+      "sha256": "66c4991cbbedec9eb43ee1ab183684cfc9ed41865f36d90d954a83e1dfe30a92",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_codecs_hk.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 155216,
+      "sha256": "70f0617664ef5f63b5a9b1ac3e00f7a3d5696c8301a116aef370aee2312ab717",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_codecs_iso2022.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 24488,
+      "sha256": "8860bbf1ab0389f33d5dcaf405a8a3abb84e60780843d360c1d9e181d18353a0",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_codecs_jp.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 257784,
+      "sha256": "2cbcf9340db7a11b364ca60d61048f1955f86d03ef92e2d90f5f6942f9bbd0b5",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_codecs_kr.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 134800,
+      "sha256": "1c80fbbed85fb2938a5372782aae237925bdad7035a2d78ca5890ef071b71be5",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_codecs_tw.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 114280,
+      "sha256": "92e7d6b13df03df1e5854361d7c46def7f7cf6d2a1229b3d455212ab93209463",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_csv.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 34728,
+      "sha256": "12228f0dea86057ef4292ccc02502ba03a0d080b817a046442865bb605c15d12",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_ctypes.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 140744,
+      "sha256": "8b6150d2ce92f63a0d5f265d1188a3166c036cb135fa4c646b8884e60ed3967b",
+      "needed": [
+        "libc.so.6",
+        "libffi.so.8"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.34",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_decimal.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 221088,
+      "sha256": "4a730d2727f8ab3cd2a5a3d90b00cf2cdecdaee1c73f28899c9feb3de6b70238",
+      "needed": [
+        "libc.so.6",
+        "libmpdec.so.4"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_hashlib.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 65896,
+      "sha256": "b3fe2004eee3cf61c952cf6f9504b5ebaba09419a7c8c91bc4aa6c64e4e59ff1",
+      "needed": [
+        "libc.so.6",
+        "libcrypto.so.4"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_heapq.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 36632,
+      "sha256": "a3ac19795ce89cefd7da9c4caf07b63525c1c52c62b1def587b6f15fb5276e79",
+      "needed": [],
+      "glibc_versions": []
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_json.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 50464,
+      "sha256": "46e5dbf7d3bda947a978a24a0c5cd8e6748670372501327aeb7001123ca00341",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_lzma.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 42080,
+      "sha256": "1df81e4cfc27e34fd8d11f2561d12e828eeba39bf3fa51cbede9b62fb713769b",
+      "needed": [
+        "libc.so.6",
+        "liblzma.so.5"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_math_integer.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 28416,
+      "sha256": "97b59d97227675fdd1755a3f8f1117fd959f8dff282870f8ea0ab9b36d179a98",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_md5.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 24848,
+      "sha256": "d21685a6fdf4da2cd1d90d691fa6f8e80223f381d6db12c700f7093b48721cdf",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_multibytecodec.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 51848,
+      "sha256": "0e52fd68e79d8232aecf0a24850a87ffda2dd93fa779d1aa30182df153c10ff2",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_pickle.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 147656,
+      "sha256": "bbb42d5cb7cd8688abcbd0ce8a2052b254642da22f9d5a5c0893e290a2846df2",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_posixsubprocess.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 32336,
+      "sha256": "68573cb484d79e813771f0547491b2758087df315c831dd7dcad1add06afdf42",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.32",
+        "2.34",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_random.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 20384,
+      "sha256": "dd0091a253ae68a5589d30739112f20ffc064ea79c2681e78c05a87b47dd1388",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_sha1.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 20800,
+      "sha256": "aea715116d947acd9c5f3c2001ac36bcb7c73de546b60a18e820836d44891945",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_sha2.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 75224,
+      "sha256": "0459dae57f68e221fb281195011960ecc08b423336a2e5cffd95e043c2ed638d",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_sha3.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 38952,
+      "sha256": "92929ee3022c8efc5d04b69425418cf1e617cfd223b971ba6b0ef21dbf99b2b7",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_socket.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 122168,
+      "sha256": "6c6ccd73a23fd9192ddfd635f82f207fd79c6091df5f569e5857382a0b6c28ab",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.10",
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.38",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_ssl.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 192296,
+      "sha256": "7e8144a39d087e2593fdd7d0be7bd708fd6980a429b7195b2dfc9e55d490c4af",
+      "needed": [
+        "libc.so.6",
+        "libcrypto.so.4",
+        "libssl.so.4"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_statistics.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 11664,
+      "sha256": "2340b2db01f60511835b7e8de79fad1bb4363f28b57b29ca2b5e12cf67342f28",
+      "needed": [
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.29"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_struct.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 65600,
+      "sha256": "f83e51aecdc387816340de4a2345dbf211273ad6cb2e0d9b739042a723ead298",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_uuid.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 11664,
+      "sha256": "dccea432ad4c7409fda9d4cc847f058bc4516a12f8c84a9eebed8a2869f4bd26",
+      "needed": [
+        "libc.so.6",
+        "libuuid.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/_zstd.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 51728,
+      "sha256": "730539a5e8a369ea95811c8b17d25a1eec2198396fc7119097731b8aaa4bea21",
+      "needed": [
+        "libc.so.6",
+        "libzstd.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/array.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 72664,
+      "sha256": "ad8180cfed6860dc37497516ee0c2a6e641a35743ffa45bfcc129175c6d36f72",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/binascii.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 71480,
+      "sha256": "1dac556203056483354dbff55e2066b69e6a5f45f5394b738a9e8c7401f1adda",
+      "needed": [
+        "libc.so.6",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/fcntl.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 24176,
+      "sha256": "827b6266714f6ee6240e3476a2a313504c314bb5898a827d14c1ec1df5b89fd5",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.28",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/grp.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 20408,
+      "sha256": "4197ac8e23f5c14b0401e37b15699579352a93b6e8d2fe3a17d2e54879aa89a3",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/math.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 67984,
+      "sha256": "3483f3deb063c02ac38c497245c7a2aa38de95909c2b41f7984152403fdd9e1c",
+      "needed": [
+        "libc.so.6",
+        "libm.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.29",
+        "2.38",
+        "2.4",
+        "2.44"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/resource.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 20536,
+      "sha256": "796acb723aa9903d8d32a34a5f09a37c411b3902dd89e8c6e141183104ee48b6",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.13",
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/select.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 42136,
+      "sha256": "7f57a077aa12dec8b8d2970c73280623adfa3a4555a66f5be385d91739d33ca8",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.15",
+        "2.2.5",
+        "2.3.2",
+        "2.4",
+        "2.9"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/unicodedata.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 740968,
+      "sha256": "8453958929754e3869f595b5a59698a951831e77bbb21b7ffc89aa55e3346e26",
+      "needed": [
+        "libc.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.3.4",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/python3.15/lib-dynload/zlib.cpython-315-x86_64-linux-gnu.so",
+      "bytes": 47768,
+      "sha256": "22976e7474ec64ea34a78739ee4f1620deeb62ef6cc800d806bb8136926276d9",
+      "needed": [
+        "libc.so.6",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.2.5",
+        "2.4"
+      ]
+    },
+    {
+      "path": "_internal/shiboken6/Shiboken.abi3.so",
+      "bytes": 23824,
+      "sha256": "6195b9fac615bd9e5d9c3527819b844216b0f876dbfaafa5b3b314327b292d0c",
+      "needed": [
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libshiboken6.abi3.so.6.12",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.2.5"
+      ]
+    },
+    {
+      "path": "_internal/shiboken6/libshiboken6.abi3.so.6.12",
+      "bytes": 445936,
+      "sha256": "2b3d9767d69da0afabe4a383dc241a110fac4c0bb63cdeb3d01314e9c702241e",
+      "needed": [
+        "ld-linux-x86-64.so.2",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libstdc++.so.6"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3"
+      ]
+    },
+    {
+      "path": "true-screen",
+      "bytes": 2047440,
+      "sha256": "de58bb1201e15b11a7a73bf88ba5ec7b37b405ab47b9dfd0ab01faef5558a47c",
+      "needed": [
+        "libc.so.6",
+        "libdl.so.2",
+        "libpthread.so.0",
+        "libz.so.1"
+      ],
+      "glibc_versions": [
+        "2.14",
+        "2.2.5",
+        "2.3",
+        "2.3.4",
+        "2.4",
+        "2.7"
+      ]
+    }
+  ],
+  "symlinks": [
+    {
+      "path": "_internal/libQt6Core.so.6",
+      "target": "PySide6/Qt/lib/libQt6Core.so.6"
+    },
+    {
+      "path": "_internal/libQt6DBus.so.6",
+      "target": "PySide6/Qt/lib/libQt6DBus.so.6"
+    },
+    {
+      "path": "_internal/libQt6Gui.so.6",
+      "target": "PySide6/Qt/lib/libQt6Gui.so.6"
+    },
+    {
+      "path": "_internal/libQt6OpenGL.so.6",
+      "target": "PySide6/Qt/lib/libQt6OpenGL.so.6"
+    },
+    {
+      "path": "_internal/libQt6Svg.so.6",
+      "target": "PySide6/Qt/lib/libQt6Svg.so.6"
+    },
+    {
+      "path": "_internal/libQt6WaylandClient.so.6",
+      "target": "PySide6/Qt/lib/libQt6WaylandClient.so.6"
+    },
+    {
+      "path": "_internal/libQt6Widgets.so.6",
+      "target": "PySide6/Qt/lib/libQt6Widgets.so.6"
+    },
+    {
+      "path": "_internal/libQt6WlShellIntegration.so.6",
+      "target": "PySide6/Qt/lib/libQt6WlShellIntegration.so.6"
+    },
+    {
+      "path": "_internal/libQt6XcbQpa.so.6",
+      "target": "PySide6/Qt/lib/libQt6XcbQpa.so.6"
+    },
+    {
+      "path": "_internal/libicudata.so.73",
+      "target": "PySide6/Qt/lib/libicudata.so.73"
+    },
+    {
+      "path": "_internal/libicui18n.so.73",
+      "target": "PySide6/Qt/lib/libicui18n.so.73"
+    },
+    {
+      "path": "_internal/libicuuc.so.73",
+      "target": "PySide6/Qt/lib/libicuuc.so.73"
+    },
+    {
+      "path": "_internal/libpyside6.abi3.so.6.12",
+      "target": "PySide6/libpyside6.abi3.so.6.12"
+    },
+    {
+      "path": "_internal/libshiboken6.abi3.so.6.12",
+      "target": "shiboken6/libshiboken6.abi3.so.6.12"
+    }
+  ],
+  "broken_links": [],
+  "total_regular_bytes": 160885837,
+  "native_qt_libraries": [
+    "libQt6Core.so.6",
+    "libQt6DBus.so.6",
+    "libQt6Gui.so.6",
+    "libQt6OpenGL.so.6",
+    "libQt6Svg.so.6",
+    "libQt6WaylandClient.so.6",
+    "libQt6Widgets.so.6",
+    "libQt6WlShellIntegration.so.6",
+    "libQt6XcbQpa.so.6"
+  ],
+  "external_sonames": [
+    "ld-linux-x86-64.so.2",
+    "libEGL.so.1",
+    "libGL.so.1",
+    "libc.so.6",
+    "libdl.so.2",
+    "libm.so.6",
+    "libpthread.so.0",
+    "libresolv.so.2",
+    "libwayland-client.so.0",
+    "libwayland-cursor.so.0",
+    "libwayland-egl.so.1",
+    "libxcb.so.1"
+  ],
+  "unresolved_qt_sonames": [],
+  "max_glibc_symbol_version": "2.44",
+  "notes": [
+    "Dependências externas por SONAME, sem validação de disponibilidade ou CVEs do sistema.",
+    "Hashes identificam estes arquivos; não constituem assinatura/autenticidade."
+  ]
+}

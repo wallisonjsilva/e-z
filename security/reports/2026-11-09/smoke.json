@@ -1,0 +1,11 @@
+{
+  "captured_at_utc": "2026-11-10T00:37:48.059572+00:00",
+  "executable_sha256": "de58bb1201e15b11a7a73bf88ba5ec7b37b405ab47b9dfd0ab01faef5558a47c",
+  "platform": "offscreen",
+  "alive_after_3_seconds": true,
+  "returncode_after_termination": -15,
+  "notes": [
+    "Diretório temporário fora do projeto; variáveis de busca Python/Qt removidas.",
+    "Encerramento por sinal; não valida fechamento pela UI nem funções ou sessão nativa."
+  ]
+}

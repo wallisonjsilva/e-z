@@ -1,0 +1,158 @@
+{
+  "queried_at_utc": "2026-11-10T00:33:02.579228+00:00",
+  "lock_sha256": "a010191ea8f5c6417aabe1441dc62ce30584a5fb26e373bb1d0c59a2194953ae",
+  "summary": {
+    "packages": 21,
+    "complete": true,
+    "active_advisories": 0
+  },
+  "packages": [
+    {
+      "name": "altgraph",
+      "version": "0.17.5",
+      "source": "https://pypi.org/pypi/altgraph/0.17.5/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "source": "https://pypi.org/pypi/colorama/0.4.6/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "source": "https://pypi.org/pypi/iniconfig/2.3.1/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "macholib",
+      "version": "1.16.4",
+      "source": "https://pypi.org/pypi/macholib/1.16.4/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "source": "https://pypi.org/pypi/packaging/26.3/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "source": "https://pypi.org/pypi/pefile/2024.8.26/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "source": "https://pypi.org/pypi/pluggy/1.7.0/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "source": "https://pypi.org/pypi/pygments/2.21.0/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "source": "https://pypi.org/pypi/pyinstaller/6.22.3/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.9",
+      "source": "https://pypi.org/pypi/pyinstaller-hooks-contrib/2026.9/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pyside6",
+      "version": "6.12.0",
+      "source": "https://pypi.org/pypi/pyside6/6.12.0/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pyside6-addons",
+      "version": "6.12.0",
+      "source": "https://pypi.org/pypi/pyside6-addons/6.12.0/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pyside6-essentials",
+      "version": "6.12.0",
+      "source": "https://pypi.org/pypi/pyside6-essentials/6.12.0/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pyside6-pdf",
+      "version": "6.12.0.140",
+      "source": "https://pypi.org/pypi/pyside6-pdf/6.12.0.140/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pyside6-webengine",
+      "version": "6.12.0.140",
+      "source": "https://pypi.org/pypi/pyside6-webengine/6.12.0.140/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pytest",
+      "version": "9.2.0",
+      "source": "https://pypi.org/pypi/pytest/9.2.0/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "source": "https://pypi.org/pypi/pywin32-ctypes/0.2.3/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.1",
+      "source": "https://pypi.org/pypi/setuptools/84.2.1/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.12.0",
+      "source": "https://pypi.org/pypi/shiboken6/6.12.0/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "uv",
+      "version": "0.13.7",
+      "source": "https://pypi.org/pypi/uv/0.13.7/json",
+      "vulnerabilities": [],
+      "complete": true
+    },
+    {
+      "name": "uv-build",
+      "version": "0.13.7",
+      "source": "https://pypi.org/pypi/uv-build/0.13.7/json",
+      "vulnerabilities": [],
+      "complete": true
+    }
+  ]
+}

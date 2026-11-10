@@ -1,0 +1,249 @@
+{
+  "captured_at_utc": "2026-11-10T00:32:05.640389+00:00",
+  "python": "3.15.0",
+  "system": "Linux",
+  "machine": "x86_64",
+  "libc": [
+    "glibc",
+    "2.44"
+  ],
+  "qt": "6.12.0",
+  "lock_sha256": "a010191ea8f5c6417aabe1441dc62ce30584a5fb26e373bb1d0c59a2194953ae",
+  "build_requires": [
+    "uv_build>=0.13.7,<0.14.0"
+  ],
+  "application_qt_imports": [
+    "PySide6.QtCore",
+    "PySide6.QtDBus",
+    "PySide6.QtGui",
+    "PySide6.QtWidgets"
+  ],
+  "installed": [
+    {
+      "name": "altgraph",
+      "version": "0.17.5",
+      "license": "MIT"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "license": "MIT"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "license": "Apache-2.0 OR BSD-2-Clause"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "license": "MIT"
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "license": "BSD-2-Clause"
+    },
+    {
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)"
+    },
+    {
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.9",
+      "license": null
+    },
+    {
+      "name": "pyside6",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    },
+    {
+      "name": "pyside6-addons",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    },
+    {
+      "name": "pyside6-essentials",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    },
+    {
+      "name": "pyside6-pdf",
+      "version": "6.12.0.140",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    },
+    {
+      "name": "pyside6-webengine",
+      "version": "6.12.0.140",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    },
+    {
+      "name": "pytest",
+      "version": "9.2.0",
+      "license": "MIT"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.1",
+      "license": "MIT"
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.12.0",
+      "license": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    },
+    {
+      "name": "true-screen",
+      "version": "0.1.0",
+      "license": null
+    }
+  ],
+  "locked": [
+    {
+      "name": "altgraph",
+      "version": "0.17.5",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "macholib",
+      "version": "1.16.4",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pygments",
+      "version": "2.21.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.9",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pyside6",
+      "version": "6.12.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pyside6-addons",
+      "version": "6.12.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pyside6-essentials",
+      "version": "6.12.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pyside6-pdf",
+      "version": "6.12.0.140",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pyside6-webengine",
+      "version": "6.12.0.140",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pytest",
+      "version": "9.2.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.1",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.12.0",
+      "source": {
+        "registry": "https://pypi.org/simple"
+      }
+    },
+    {
+      "name": "true-screen",
+      "version": "0.1.0",
+      "source": {
+        "editable": "."
+      }
+    }
+  ],
+  "notes": [
+    "Inventário de pacotes, não SBOM nativo completo.",
+    "Entradas duplicadas de lib/lib64 foram normalizadas."
+  ]
+}
