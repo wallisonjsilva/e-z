@@ -9,12 +9,12 @@ from PySide6.QtGui import QImage
 from PySide6.QtTest import QTest
 from PySide6.QtWidgets import QLineEdit
 
-from true_screen.application import regions
-from true_screen.domain.document import SourceImage, ZoomMode
-from true_screen.domain.geometry import MAX_BUFFER_BYTES, Rect
-from true_screen.imaging import composition, images
-from true_screen.platform import clipboard, dialogs
-from true_screen.ui import main_window
+from e_z.application import regions
+from e_z.domain.document import SourceImage, ZoomMode
+from e_z.domain.geometry import MAX_BUFFER_BYTES, Rect
+from e_z.imaging import composition, images
+from e_z.platform import clipboard, dialogs
+from e_z.ui import main_window
 
 
 @pytest.fixture

@@ -4,7 +4,7 @@ import math
 
 import pytest
 
-from true_screen.domain.geometry import (
+from e_z.domain.geometry import (
     MAX_BUFFER_BYTES, Rect, scaled_size, selection_rect, validate_buffer_budget, validate_surface,
 )
 

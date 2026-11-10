@@ -1,136 +1,143 @@
-# True Screen
+# e-z
 
-Aplicativo desktop offline para capturar telas e ampliar trechos de evidências, com Python e PySide6.
+**Capture, amplie e destaque evidências.**
 
-A implementação e a homologação começam no Linux, com X11 e Wayland. Após validar o editor essencial (E1) e o editor completo (E2), o projeto será portado para Windows (E3), reutilizando o núcleo e a interface.
+e-z — **Evidência + Zoom** — é um aplicativo desktop offline para transformar capturas de tela em evidências técnicas mais legíveis. Capture ou abra uma imagem, amplie os detalhes importantes e exporte tudo em uma única composição.
 
-Implementação atual: abrir PNG/JPEG, colar imagem, editar ampliações, exportar PNG e copiar a composição pela janela, com fonte imutável e confirmação de descarte de trabalho não exportado. Use **Abrir** (Ctrl+O), **Colar** (Ctrl+V), **Exportar PNG** e **Copiar composição** (Ctrl+C). O preview ajusta a base à área disponível; exportação e cópia mantêm os pixels físicos.
+Feito para relatórios de bugs, documentação, testes de software e demonstrações em que um detalhe pequeno precisa ficar claro.
 
-Após abrir uma imagem, use **Selecionar** e arraste em qualquer direção para marcar uma região. O painel mostra origem e tamanho em pixels da base. Use **Pan** para navegar por arraste, a roda para aproximar/afastar e os botões **Diminuir**, **Aumentar**, **100%** e **Ajustar** para controlar a visualização. **Ajustar** mantém a imagem enquadrada ao redimensionar a janela até uma navegação manual. Durante a seleção, **Escape** cancela o novo retângulo; sem arraste, limpa a seleção.
+**Python + PySide6 · Linux primeiro · Em desenvolvimento**
 
-Seleção, zoom e pan não alteram os pixels nem tornam o documento não exportado. **100%** corresponde à escala lógica da visualização; telas de alta densidade podem usar mais pixels físicos para exibi-la.
+## Por que e-z?
 
-Para ampliar, selecione uma região e escolha **Escala predefinida** (150%, 200% ou 300%) ou informe **Escala personalizada** entre 100% e 800%. Escolha **Modo** (**Sobreposto** ou **Externo**) e clique em **Criar ampliação**. O modo externo inicia à direita da base, com margem de 24 pixels. Use **Ajustar** para enquadrar o canvas expandido.
+Uma mensagem de erro, um valor em uma tabela ou um botão pode desaparecer em uma captura de tela inteira. O e-z permite ampliar esses trechos e manter o contexto da imagem original.
 
-Crie várias ampliações e selecione uma delas na lista para editar escala/modo ou remover. Com **Objetos**, clique no destino da camada superior e arraste seu contorno; a imagem se atualiza ao soltar. **Escape**, perda de foco ou troca de ferramenta cancelam o arraste. **Delete**, com foco na área de edição/lista, ou **Remover ampliação** exclui a ampliação selecionada. Para selecionar outra origem, volte a **Selecionar**; isso também funciona sobre áreas cobertas por ampliações.
+Cada ampliação parte diretamente da imagem-base, preservada no documento. Você pode aproximar a visualização para editar sem alterar as dimensões da exportação. Todo o processamento acontece no computador, sem conta, envio de imagens ou telemetria.
 
-Escala e modo editam a ampliação selecionada; cada operação preserva a fonte original. Um destino externo deve ficar inteiramente fora da base, inclusive em posições negativas. Mover sobre a base é recusado; alternar para Externo reposiciona à direita somente quando necessário. Selecionar objetos não altera o estado de exportação; criar, editar ou remover exige nova exportação.
+## O que já funciona
 
-Preview e exportação usam a mesma composição e interpolação suave Qt; contornos de edição ficam fora do PNG. **Capturar** foi integrado: em X11, escolha um monitor; em Wayland, autorize e selecione a captura no diálogo do sistema. As janelas do aplicativo são ocultadas e restauradas antes de confirmar a substituição do documento. Cancelar ou falhar preserva o trabalho. A captura ainda exige homologação nativa nas sessões Linux.
+- **Captura de tela:** integração X11 com escolha de monitor e Wayland pelo portal do sistema, respeitando suas permissões.
+- **Importação:** abrir PNG/JPEG ou colar uma imagem da área de transferência.
+- **Ampliações independentes:** criar vários destaques com presets de 150%, 200% e 300%, ou escala personalizada de 100% a 800%.
+- **Dois modos de composição:** sobrepor a ampliação à imagem ou posicioná-la fora da base, expandindo a área de saída.
+- **Edição visual:** selecionar, mover, ajustar a escala e remover ampliações; navegar com zoom e pan.
+- **Saída pronta para compartilhar:** exportar PNG ou copiar a composição, sem contornos e controles de edição.
+- **Processamento em segundo plano:** carregamento, composição e exportação com indicação de atividade e validação de limites de imagem.
 
-Se a sessão ou o D-Bus estiver indisponível, **Capturar** fica desabilitado e o tooltip informa o motivo; **Abrir** e **Colar** continuam disponíveis. A conexão D-Bus habilita a tentativa pelo portal; serviço/interface ausentes também são tratados ao solicitar. O plugin offscreen não oferece captura. A espera pelo portal usa o event loop Qt, com timeout e cancelamento. Histórico/desfazer pertence à E2.
+A captura, o clipboard e o comportamento com múltiplos monitores ainda passam por validação nas sessões Linux reais. A disponibilidade da captura depende da sessão e dos serviços do desktop.
 
-Carregamento, composição, escala e gravação de PNG agora são processados em segundo plano. Durante a operação, a barra de atividade e o status indicam o trabalho; controles de edição ficam temporariamente indisponíveis. Se você fechar a janela, o aplicativo aguarda a operação terminar e depois confirma eventual descarte. A exportação em andamento termina antes de fechar. Resultados pendentes de carregar/editar/copiar são descartados quando o fechamento já foi solicitado.
+## Como experimentar
 
-O aplicativo valida limites antes de alocar: 32.768 pixels por eixo, 40 milhões de pixels por superfície e orçamento conservador de 512 MiB para buffers de imagem. Uma operação pode ser recusada antes de atingir o limite de pixels por exigir várias superfícies simultâneas. Se isso ocorrer, reduza as dimensões da entrada ou a escala da ampliação. Esse orçamento não representa um limite garantido da memória total do processo/GPU. As chamadas de captura e clipboard do sistema ainda podem bloquear; o pool não as interrompe.
+O projeto está em desenvolvimento e ainda não oferece um pacote homologado para distribuição. Para executar a partir do código, use **Python 3.15**, **uv** e uma sessão gráfica Linux.
 
-Para colar o resultado em outro aplicativo, use **Copiar composição** ou Ctrl+C com foco na área de edição/lista e depois cole no destino. A cópia inclui a base e todas as ampliações, sem contornos ou seleção. Copiar mantém o aviso de trabalho não exportado; use **Exportar PNG** para guardar um arquivo. A persistência do clipboard após fechar depende da sessão e ainda não foi homologada: mantenha o True Screen aberto até terminar de colar.
-
-| Atalho local | Ação |
-| --- | --- |
-| Ctrl+O | Abrir PNG/JPEG |
-| Ctrl+V | Colar imagem como novo documento |
-| Ctrl+C | Copiar composição |
-| Delete | Remover ampliação selecionada, com foco na área de edição/lista |
-| Escape | Cancelar gesto; sem gesto, limpar seleção de objeto ou origem |
-
-Nos campos de texto, copiar/colar texto e Delete/Escape continuam pertencendo ao campo. Ctrl+Z/Ctrl+Y e Ctrl+S serão integrados na E2.
-
-## Desenvolvimento
-
-Use Python 3.15 e [uv](https://docs.astral.sh/uv/). O arquivo `uv.lock` fixa as dependências transitivas; não precisa regenerá-lo para instalar.
+Na pasta do repositório:
 
 ```sh
 uv sync --locked
-uv run --locked true-screen
+uv run --locked e-z
 ```
 
-Alternativa de inicialização: `uv run --locked python -m true_screen`.
+A instalação inicial precisa de acesso ao PyPI. Depois de instalar as dependências, o aplicativo funciona offline. Em Wayland, a captura também exige o serviço XDG Desktop Portal e o backend do seu desktop.
 
-As dependências diretas são PySide6 6.12.0, PyInstaller 6.22.3 e pytest (desenvolvimento). Os metadados oficiais de [PySide6](https://pypi.org/project/PySide6/6.12.0/) e [PyInstaller](https://pypi.org/project/pyinstaller/6.22.3/) incluem Python 3.15. O grupo de desenvolvimento é instalado pelo `uv sync`.
+O comando é `e-z` e o módulo Python é `e_z`. Você também pode iniciar com `uv run --locked python -m e_z`.
 
-## Verificações
+### Da imagem à evidência
+
+1. Clique em **Capturar**, **Abrir** ou **Colar** para carregar a imagem-base.
+2. Use **Selecionar** e arraste sobre o detalhe que deseja ampliar.
+3. Escolha a **Escala** e o **Modo**: **Sobreposto** ou **Externo**.
+4. Clique em **Criar ampliação**. Repita para destacar outras regiões.
+5. Use **Objetos** para mover os destaques e **Ajustar** para visualizar a composição inteira.
+6. Clique em **Exportar PNG** ou **Copiar composição** para usar o resultado.
+
+Por exemplo, uma região de 100 × 40 pixels ampliada a 200% gera um destaque de 200 × 80 pixels, independentemente do zoom usado para navegar.
+
+Mantenha o aplicativo aberto até colar o resultado em outro programa: a persistência da área de transferência após fechar ainda depende de validação por sessão. Para guardar o resultado, exporte o PNG.
+
+### Atalhos
+
+| Atalho | Ação |
+| --- | --- |
+| `Ctrl+O` | Abrir PNG/JPEG |
+| `Ctrl+V` | Colar imagem como novo documento |
+| `Ctrl+C` | Copiar a composição |
+| `Delete` | Remover a ampliação selecionada |
+| `Escape` | Cancelar o gesto ou limpar a seleção |
+
+`Delete` e `Escape` atuam na área de edição/lista de objetos. Campos de texto preservam seus atalhos de edição. Use a roda do mouse para zoom e **Pan** para navegar por arraste.
+
+## Roadmap
+
+| Etapa | Objetivo | Situação |
+| --- | --- | --- |
+| **E1 — Editor essencial Linux** | Capturar, importar, ampliar, exportar e copiar | Funcionalidades implementadas; homologação e distribuição pendentes |
+| **E2 — Editor completo Linux** | Bordas, conectores, ordem de camadas, filtros, desfazer/refazer e projetos `.evidence` | Planejado |
+| **E3 — Windows** | Portar as integrações e validar captura, DPI, clipboard e distribuição | Após homologar E1 e E2 no Linux |
+
+Salvar projetos editáveis e os atalhos `Ctrl+S`, `Ctrl+Z` e `Ctrl+Y` fazem parte da E2. A matriz Linux proposta inclui Fedora KDE Wayland, sessão X11 nativa e Ubuntu 24.04 GNOME Wayland; ela ainda não representa suporte homologado.
+
+O escopo atual prioriza captura e composição local. OCR, reconstrução por IA, vídeo, nuvem e exportação PDF ficam fora dessas entregas.
+
+## Desenvolvimento e testes
+
+O projeto usa Python 3.15, PySide6 e dependências fixadas em `uv.lock`. A lógica do documento fica separada da interface e das integrações de captura/clipboard.
 
 ```sh
 uv run --locked python -m pytest -q
 uv build --offline
+```
+
+A última execução registrada teve **248 testes aprovados**. A suíte verifica geometria, importação, composição, exportação, limites e fluxos Qt com imagens sintéticas. Testes `offscreen` e serviços fictícios não substituem validação nativa de captura, DPI, clipboard ou distribuição. Os resultados e as limitações estão no [estado do projeto](STATE.md).
+
+<details>
+<summary>Comandos de verificação por área</summary>
+
+```sh
+# Importação e composição
+uv run --locked python -m pytest -q tests/test_import.py tests/test_composition.py
+
+# Seleção, navegação e escalas Qt simuladas
+uv run --locked python -m pytest -q tests/test_canvas.py
+
+# Ampliações e edição visual
+uv run --locked python -m pytest -q tests/test_regions.py tests/test_zoom_ui.py
+
+# Clipboard e atalhos
+uv run --locked python -m pytest -q tests/test_clipboard.py
+
+# Workers Qt, limites e recuperação
+uv run --locked python -m pytest -q tests/test_processing.py
+
+# Captura com fixtures
+uv run --locked python -m pytest -q tests/test_capture.py
+
+# Sonda de processamento e memória com imagem sintética
+uv run --locked python tests/processing_probe.py
+
+# Protocolo QtDBus em barramento privado
+dbus-run-session -- .venv/bin/python tests/portal_protocol_check.py
+
+# Versão do empacotador
 uv run --locked pyinstaller --version
 ```
 
-O build acima gera sdist e wheel Python. W11 já tem uma receita PyInstaller Linux e candidato local, ainda sem liberação pública: consulte o [procedimento de empacotamento](docs/engineering/empacotamento-linux.md) e a [auditoria de dependências](docs/engineering/auditoria-dependencias-2026-11-09.md). As consultas Python retornaram zero avisos, mas QtCore 6.12.0 está na faixa de um aviso oficial; segurança nativa, licenças e homologação continuam pendentes. O candidato Fedora exige glibc 2.44. O executável Windows virá em P04, após homologar E1/E2 Linux.
+O teste D-Bus requer `dbus-run-session` do sistema e permissão para criar sockets Unix locais. Ele usa serviço e imagem fictícios, sem capturar a tela. A sonda usa Qt offscreen e não mede desempenho de uma sessão gráfica real.
 
-A suíte testa domínio, importação, composição, exportação e fluxos da janela com o plugin Qt `offscreen`, configurado pela fixture de testes. Os testes funcionais injetam um executor imediato; `test_processing.py` usa o pool Qt real para verificar threads, event loop, concorrência e fechamento. Usa somente imagens sintéticas e diretórios temporários; os testes de clipboard usam o clipboard local do plugin offscreen.
+Se o cache padrão do uv estiver somente leitura, acrescente `--cache-dir /tmp/e-z-uv-cache` após `uv` nos comandos Linux.
 
-Para repetir somente os testes de importação, clipboard, janela e exportação sem tela:
+</details>
 
-```sh
-uv run --locked python -m pytest -q tests/test_import.py tests/test_composition.py
-```
+## Empacotamento e segurança
 
-Para verificar seleção, navegação e escalas Qt simuladas em processos isolados:
+Existe uma receita PyInstaller em diretório (`onedir`) e um candidato Linux experimental. `uv build` gera os pacotes Python sdist/wheel; o executável tem um procedimento próprio em [Empacotamento Linux](docs/engineering/empacotamento-linux.md).
 
-```sh
-uv run --locked python -m pytest -q tests/test_canvas.py
-```
+A [auditoria de dependências](docs/engineering/auditoria-dependencias-2026-11-09.md) registra consultas OSV/PyPI e revisão dos avisos nativos do Qt. O QtCore 6.12.0 está na faixa da CVE-2026-105924, sem uso da operação afetada identificado no código. A distribuição permanece pendente de correção/verificação, revisão de licenças e testes em máquina limpa. O candidato Fedora exige glibc 2.44 e não comprova compatibilidade com Ubuntu 24.04.
 
-Para verificar criação, modos, escala, movimento, exclusão e recuperação de falhas nas ampliações:
+## Documentação e participação
 
-```sh
-uv run --locked python -m pytest -q tests/test_regions.py tests/test_zoom_ui.py
-```
+- [Especificação](specs/e-z.md): requisitos, escopo e critérios de aceitação.
+- [Design técnico](specs/designs/e-z.md): arquitetura e contratos.
+- [Tarefas](TASKS.md): execução e dependências entre etapas.
+- [Estado do projeto](STATE.md): decisões, verificações e próximos passos.
 
-Para verificar cópia da composição, igualdade com PNG e atalhos locais sem sessão gráfica real:
-
-```sh
-uv run --locked python -m pytest -q tests/test_clipboard.py
-```
-
-Para verificar processamento com workers Qt reais, limites e recuperação:
-
-```sh
-uv run --locked python -m pytest -q tests/test_processing.py
-```
-
-Uma sonda Linux offscreen gera uma base sintética 1920×1080, amplia uma região externamente e executa carregar/compor/copiar/exportar, medindo tempo, ticks Qt e pico RSS do processo completo:
-
-```sh
-uv run --locked python tests/processing_probe.py
-```
-
-Os números são uma amostra local; não comprovam desempenho no desktop, limite de RSS nem compatibilidade nativa. A sonda usa o pool real e clipboard offscreen, sem capturar tela ou alterar o clipboard da sessão gráfica.
-
-Para verificar os fluxos de captura com fixtures e janelas offscreen:
-
-```sh
-uv run --locked python -m pytest -q tests/test_capture.py
-```
-
-No Linux, o protocolo do portal pode ser repetido num barramento D-Bus privado, após instalar o ambiente com uv. O comando requer `dbus-run-session` do sistema e permissão para criar sockets Unix locais:
-
-```sh
-dbus-run-session -- .venv/bin/python tests/portal_protocol_check.py
-```
-
-Esse teste usa um serviço e PNG fictícios, bloqueia autoativação de serviços do sistema e não captura a tela. Verifica serialização QtDBus real, resposta antecipada, handle alternativo, cancelamento, falha, URI inválida, timeout/Close e serviço ausente. Ele não substitui a validação do portal do desktop. A integração usa QtDBus incluído no PySide6; não foi adicionada dependência Python.
-
-Os testes usam `QT_SCALE_FACTOR` em 1, 1.25, 1.5 e 2 com o plugin offscreen. Eles verificam coordenadas lógicas e pixels da fonte; não substituem DPI misto em monitores reais.
-
-Se o cache padrão do uv estiver somente leitura, acrescente `--cache-dir /tmp/true-screen-uv-cache` após `uv` nos comandos Linux. A primeira instalação requer acesso ao PyPI; o aplicativo planejado funciona offline.
-
-## Planejamento e validação nativa
-
-Consulte [especificação](specs/true-screen.md), [design](specs/designs/true-screen.md), [tarefas](TASKS.md) e [estado](STATE.md).
-
-Os IDs W01–W11 foram mantidos por rastreabilidade e agora pertencem à entrega Linux. P01–P05 representam o port Windows. Veja o mapa de reorganização no TASKS.md.
-
-Primeiro no Linux: instalar o ambiente, executar os testes e iniciar a janela com `uv run --locked true-screen`, sem forçar o plugin offscreen. Verificar abertura, redimensionamento e fechamento sem processo remanescente. Registrar distribuição, desktop, sessão X11/Wayland, versões e resultados em STATE.md. O ambiente de desenvolvimento informa Fedora 45 KDE Wayland; a matriz proposta inclui sessão X11 nativa e Ubuntu 24.04 LTS GNOME Wayland. A presença de DISPLAY numa sessão Wayland não substitui validação X11.
-
-W04/W05: abrir PNG e JPEG; colar imagem de outro aplicativo; cancelar substituição de documento não exportado; exportar e reabrir o PNG; provocar erro de acesso ao destino e verificar que o documento continua aberto e não exportado. Esses cenários exigem sessões Linux reais.
-
-W09: criar composição com três ampliações, incluindo destino negativo; copiar pelo botão e por Ctrl+C; colar em editor de imagens/documentos nativo e comparar conteúdo/dimensões com o PNG exportado. Repetir mantendo o True Screen aberto e depois de fechá-lo, registrando distribuição, desktop, sessão, aplicativos/versões de destino e presença de gerenciador do clipboard. Validar X11 e Wayland separadamente. A comparação local no plugin offscreen passou; colagem entre processos e persistência após fechar continuam pendentes.
-
-W06/W07: repetir seleções de 100×40 pixels e criar ampliações de 200×80 com diferentes níveis de navegação, nas bordas e em quatro direções; alternar monitores com escalas disponíveis, incluindo arranjo com origem negativa. Verificar três ampliações, modos, escala, movimento, exclusão, pan, Escape e Ajustar após redimensionar a janela. A seleção deve manter os limites e medidas da fonte. CA03/CA04/CA05 passaram localmente com o plugin offscreen; a homologação nativa e CA11 continuam pendentes.
-
-W08: em X11 real, testar múltiplos monitores, escalas fracionárias, origem negativa, monitor desconectado e ocultação/restauração de todas as janelas próprias. Em Wayland real, testar o portal do desktop com autorização, cancelamento, recusa explícita, serviço ausente e timeout. A seleção de monitor/área depende do portal. Confirmar que o documento anterior continua intacto quando a captura não se conclui ou quando o descarte é cancelado. Registrar versões do portal/backend e resultado por sessão. Não usar imagens pessoais como evidência de teste.
-
-Após homologar E1/E2 Linux, repetir os cenários do editor no Windows 11 x64, validar captura e DPI 100%/125%/150%/200%, colagem no Word e pacote em máquina limpa sem Python. Captura, DPI, clipboard e distribuição permanecem sem homologação nativa até executar e registrar seus testes.
+Para relatar um problema, informe os passos para reproduzir, distribuição, desktop, sessão X11/Wayland e comportamento esperado. Use imagens fictícias e remova dados pessoais ou credenciais dos exemplos.

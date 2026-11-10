@@ -1,5 +1,5 @@
 [project]
-name = "true-screen"
+name = "e-z"
 version = "0.1.0"
 description = "Aplicativo desktop offline para captura e ampliação de evidências"
 readme = "README.md"
@@ -13,7 +13,7 @@ dev = ["pytest>=8.4,<10", "pyinstaller==6.22.3"]
 testpaths = ["tests"]
 
 [project.scripts]
-true-screen = "true_screen:main"
+e-z = "e_z:main"
 
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]

@@ -6,12 +6,12 @@ from PySide6.QtGui import QFocusEvent, QMouseEvent
 from PySide6.QtTest import QTest
 from PySide6.QtWidgets import QApplication
 
-from true_screen.domain.document import SourceImage, ZoomMode
-from true_screen.domain.geometry import Rect
-from true_screen.imaging import images
-from true_screen.imaging.composition import compose
-from true_screen.platform import dialogs
-from true_screen.ui import main_window
+from e_z.domain.document import SourceImage, ZoomMode
+from e_z.domain.geometry import Rect
+from e_z.imaging import images
+from e_z.imaging.composition import compose
+from e_z.platform import dialogs
+from e_z.ui import main_window
 
 
 @pytest.fixture

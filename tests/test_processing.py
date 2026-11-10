@@ -7,16 +7,16 @@ from PySide6.QtCore import QEventLoop, QSize, QTimer, QUrl
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QApplication
 
-from true_screen.application import regions
-from true_screen.application.capture import CaptureRequest, CaptureStatus
-from true_screen.domain.document import EvidenceProject, SourceImage
-from true_screen.domain.errors import ValidationError
-from true_screen.domain.geometry import MAX_BUFFER_BYTES, Rect
-from true_screen.imaging import budget, images
-from true_screen.imaging.tasks import TaskRunner
-from true_screen.platform import clipboard, dialogs, linux_wayland, linux_x11
-from true_screen.ui import main_window
-from true_screen.ui.main_window import MainWindow
+from e_z.application import regions
+from e_z.application.capture import CaptureRequest, CaptureStatus
+from e_z.domain.document import EvidenceProject, SourceImage
+from e_z.domain.errors import ValidationError
+from e_z.domain.geometry import MAX_BUFFER_BYTES, Rect
+from e_z.imaging import budget, images
+from e_z.imaging.tasks import TaskRunner
+from e_z.platform import clipboard, dialogs, linux_wayland, linux_x11
+from e_z.ui import main_window
+from e_z.ui.main_window import MainWindow
 
 
 def source(width=40, height=20):

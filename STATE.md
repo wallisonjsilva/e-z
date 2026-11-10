@@ -1,4 +1,4 @@
-# Estado — True Screen
+# Estado — e-z
 
 ## Objetivo atual
 
@@ -6,11 +6,15 @@ Prioridade: implementar e homologar E1/E2 no Linux, depois portar para Windows e
 
 Auditoria de 09/11/2026: OSV retornou zero avisos para 19 pacotes e PyPI zero avisos ativos em 21 versões, mas QtCore 6.12.0 distribuído está na faixa CVE-2026-105924. Nenhum uso da operação CBOR → JSON afetada foi identificado no código; não há evidência de backport na wheel. Não publicar até corrigir/revalidar. [Relatório com fontes e JSONs](docs/engineering/auditoria-dependencias-2026-11-09.md).
 
-Candidato Linux gerado em `dist/linux-verified-candidate/true-screen`, com [receita onedir documentada](docs/engineering/empacotamento-linux.md). Contém nove bibliotecas Qt, 160.885.837 bytes regulares, zero links quebrados e zero SONAME Qt não fornecidos. Exige símbolos glibc 2.44, portanto não é candidato homologado para Ubuntu 24.04. QtNetwork/WebEngine/PDF/QML e plugins sem uso foram excluídos. Licenças/avisos completos e cadeia nativa/CPython ainda precisam de revisão antes de distribuir. Nenhum artefato publicado.
+Candidato Linux anterior à renomeação: `dist/linux-verified-candidate/true-screen`, com 160.885.837 bytes regulares. Candidato atual **e-z**: `dist/linux-e-z-candidate/e-z`, 160.885.477 bytes regulares, com [receita onedir documentada](docs/engineering/empacotamento-linux.md). Ambos têm nove bibliotecas Qt, zero links quebrados e zero SONAME Qt não fornecidos. Exigem símbolos glibc 2.44, portanto não são homologados para Ubuntu 24.04. QtNetwork/WebEngine/PDF/QML e plugins sem uso foram excluídos. Licenças/avisos completos e cadeia nativa/CPython ainda precisam de revisão antes de distribuir. Nenhum artefato publicado.
 
 Os IDs W01–W11 são históricos e foram preservados; não representam mais uma etapa Windows. As antigas tarefas L01–L05 foram incorporadas à E1/A07, conforme mapa no TASKS.md. O port Windows usa P01–P05. Nenhuma tarefa foi concluída nem teste nativo considerado aprovado pela mudança de prioridade.
 
 ## Decisões
+
+- Renomeação técnica para **e-z** autorizada após a apresentação no GitHub: distribuição/comando `e-z`, módulo `e_z`, títulos Qt e receita `packaging/linux/e-z.spec`. Esta decisão substitui a manutenção temporária do nome técnico indicada abaixo; comandos e evidências anteriores continuam identificando o estado histórico True Screen.
+
+- Nome de apresentação escolhido pelo usuário: **e-z** (Evidência + Zoom). README reorganizado para apresentação no GitHub, com funcionalidades atuais, início rápido, roadmap e documentação técnica. Comando `true-screen`, módulo `true_screen` e nomes históricos permanecem até uma migração técnica específica. Revisão documental: links, caminhos e comando de entrada conferidos; suíte não repetida, resultado de 248 testes mantém a origem registrada abaixo.
 
 - Adotar Python/PySide6 conforme MVP e estrutura existente.
 - Incorporar edição não destrutiva da ficha técnica, sem adotar Rust/Slint nesta etapa.
@@ -46,6 +50,10 @@ Os IDs W01–W11 são históricos e foram preservados; não representam mais uma
 - Fixtures funcionais usam ImmediateRunner injetado; testes próprios de processamento usam TaskRunner real. O aplicativo sempre cria TaskRunner por padrão, sem caminho especial de teste em produção.
 
 ## Verificações e limitações
+
+- D07, renomeação: `uv --cache-dir /tmp/true-screen-uv-cache lock --offline` e `sync --locked --offline` concluídos, substituindo a instalação local `true-screen` por `e-z` 0.1.0. Comparação estrutural confirmou os 19 registros de terceiros integralmente preservados no lock. Primeiro cache novo vazio falhou offline; ajuste registrado em TASKS.md antes de reutilizar o cache anterior.
+- `.venv/bin/python -m pytest -q`: **248 testes passaram em 2,89 s** com imports `e_z`. `uv --cache-dir /tmp/true-screen-uv-cache build --offline` gerou `dist/e_z-0.1.0.tar.gz` e `dist/e_z-0.1.0-py3-none-any.whl`; conteúdo, entry point `e-z = e_z:main` e ausência do pacote anterior no ambiente foram conferidos.
+- Inicialização real de `e_z.app.main()` em Qt offscreen: applicationName, organizationName e título `e-z` conferidos; janela fechou por timer e event loop retornou 0. Launcher `.venv/bin/e-z` e executável PyInstaller `dist/linux-e-z-candidate/e-z/e-z` permaneceram ativos por três segundos fora do projeto, depois encerrados por sinal. Novos [inventário](security/reports/2026-11-09-renomeacao-e-z/inventory.json), [manifesto](security/reports/2026-11-09-renomeacao-e-z/bundle.json), [launcher](security/reports/2026-11-09-renomeacao-e-z/entrypoint.json) e [smoke](security/reports/2026-11-09-renomeacao-e-z/smoke.json). Sem nova consulta de vulnerabilidades ou homologação nativa; bloqueios W11.3 preservados.
 
 - W11, 09/11/2026: `.venv/bin/python -m pytest -q` — **248 testes passaram em 2,53 s** após adicionar ferramentas/receita, sem alterar o código da aplicação. Build PyInstaller 6.22.3 onedir concluído; manifesto ELF e hashes preservados em `security/reports/2026-11-09/bundle.json`. Smoke do executável em diretório temporário com Qt offscreen: ativo após três segundos, encerrado por SIGTERM (-15), sem validar funções ou fechamento pela UI. Comandos e limites nos documentos técnicos acima.
 - `uv audit --locked --output-format json`: 19 pacotes, zero vulnerabilidades/estados adversos reportados pelo serviço; consulta PyPI: 21 versões, completa, zero avisos ativos. Ferramentas de auditoria enviaram somente nomes/versões públicos; não foram usados pip-audit nem scanner nativo completo. Avisos oficiais Qt foram revisados separadamente e impedem interpretar esse zero como ausência de vulnerabilidades.

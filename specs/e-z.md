@@ -1,4 +1,4 @@
-# SDD — True Screen
+# SDD — e-z
 
 Status: implementação em andamento; prioridade invertida para Linux por orientação do usuário. Data: 2026-11-09.
 
@@ -18,6 +18,8 @@ Os documentos de referência contêm propostas divergentes. Esta especificação
 | Prazo | Sem compromisso com estimativas das referências | Escopos e tecnologias das estimativas são diferentes |
 
 ## 2. Problema e objetivo
+
+Identidade atual: **e-z** (Evidência + Zoom). A renomeação inclui distribuição e comando `e-z`, módulo Python `e_z`, títulos Qt, receita PyInstaller e documentação ativa. Preservar referências e relatórios históricos de auditoria; não alterar versões de terceiros, formato `.evidence` ou comportamento de edição. Verificar imports, instalação pelo lock, testes, wheel/sdist e inicialização do novo executável.
 
 Produzir screenshots de evidências técnicas com trechos pequenos legíveis. O usuário captura ou importa uma imagem, seleciona regiões, amplia e exporta a composição.
 
@@ -89,6 +91,6 @@ E1 Linux exige CA02–CA06, CA10, CA11 e parte Linux de CA12. E2 Linux acrescent
 
 A auditoria das bibliotecas e a receita de empacotamento W11 têm [requisitos complementares](auditoria-empacotamento.md), com evidências e limitações próprias. O candidato local não altera os critérios nativos de E1.
 
-Specify: este documento. Design: [design técnico](designs/true-screen.md). Tasks: [tarefas](../TASKS.md). Execute: implementar em incrementos e registrar evidências no [estado](../STATE.md).
+Specify: este documento. Design: [design técnico](designs/e-z.md). Tasks: [tarefas](../TASKS.md). Execute: implementar em incrementos e registrar evidências no [estado](../STATE.md).
 
 Mudanças de comportamento atualizam requisitos, design e tarefas antes do código. Falhas exigem registrar causa e teste de regressão no planejamento; correções que apenas cumprem um requisito existente não devem alterar esse requisito.

@@ -4,8 +4,8 @@ from dataclasses import dataclass, field
 from enum import Enum
 from uuid import UUID, uuid4
 
-from true_screen.domain.errors import ValidationError
-from true_screen.domain.geometry import Rect, validate_buffer_budget, validate_surface
+from e_z.domain.errors import ValidationError
+from e_z.domain.geometry import Rect, validate_buffer_budget, validate_surface
 
 
 class ZoomMode(Enum):

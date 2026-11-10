@@ -3,7 +3,7 @@
 from PySide6.QtCore import QObject, QTimer, Signal
 from PySide6.QtWidgets import QApplication
 
-from true_screen.application.capture import CaptureResult, CaptureStatus
+from e_z.application.capture import CaptureResult, CaptureStatus
 
 
 class CaptureController(QObject):

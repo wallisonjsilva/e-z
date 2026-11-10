@@ -11,12 +11,12 @@ from PySide6.QtGui import QFocusEvent, QMouseEvent, QWheelEvent
 from PySide6.QtTest import QTest
 from PySide6.QtWidgets import QApplication, QGraphicsScene
 
-from true_screen.domain.document import SourceImage
-from true_screen.domain.geometry import Rect, scaled_size
-from true_screen.imaging.composition import compose
-from true_screen.imaging.images import source_from_image
-from true_screen.platform import dialogs
-from true_screen.ui.canvas import CanvasTool, CanvasView
+from e_z.domain.document import SourceImage
+from e_z.domain.geometry import Rect, scaled_size
+from e_z.imaging.composition import compose
+from e_z.imaging.images import source_from_image
+from e_z.platform import dialogs
+from e_z.ui.canvas import CanvasTool, CanvasView
 
 
 @pytest.fixture
@@ -243,8 +243,8 @@ import os
 from PySide6.QtCore import QPointF, Qt
 from PySide6.QtTest import QTest
 from PySide6.QtWidgets import QApplication, QGraphicsScene
-from true_screen.ui.canvas import CanvasView
-from true_screen.domain.geometry import Rect, scaled_size
+from e_z.ui.canvas import CanvasView
+from e_z.domain.geometry import Rect, scaled_size
 app = QApplication([])
 scene = QGraphicsScene()
 scene.setSceneRect(0, 0, 400, 200)

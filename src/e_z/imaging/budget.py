@@ -1,6 +1,6 @@
 """Estimativas conservadoras dos buffers simultâneos por fase, sem alocação."""
 
-from true_screen.domain.geometry import validate_buffer_budget, validate_surface
+from e_z.domain.geometry import validate_buffer_budget, validate_surface
 
 SCRATCH_BYTES = 16 * 1024 * 1024
 

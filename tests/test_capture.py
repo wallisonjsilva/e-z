@@ -5,20 +5,20 @@ from PySide6.QtCore import QEventLoop, QSize, QTimer, QUrl, Qt
 from PySide6.QtGui import QPixmap
 from PySide6.QtWidgets import QWidget
 
-from true_screen.application.capture import CaptureCapabilities, CaptureRequest, CaptureResult, CaptureStatus
-from true_screen.domain.document import SourceImage
-from true_screen.domain.geometry import MAX_BUFFER_BYTES
-from true_screen.imaging.images import image_from_source
-from true_screen.platform.capture import UnavailableCaptureBackend, detect_session
-from true_screen.platform.linux_wayland import WaylandCaptureBackend, dbus_error_status, local_screenshot_path
-from true_screen.platform.linux_x11 import X11CaptureBackend
-from true_screen.platform import dialogs
-from true_screen.ui.capture_controller import CaptureController
+from e_z.application.capture import CaptureCapabilities, CaptureRequest, CaptureResult, CaptureStatus
+from e_z.domain.document import SourceImage
+from e_z.domain.geometry import MAX_BUFFER_BYTES
+from e_z.imaging.images import image_from_source
+from e_z.platform.capture import UnavailableCaptureBackend, detect_session
+from e_z.platform.linux_wayland import WaylandCaptureBackend, dbus_error_status, local_screenshot_path
+from e_z.platform.linux_x11 import X11CaptureBackend
+from e_z.platform import dialogs
+from e_z.ui.capture_controller import CaptureController
 
 
 @pytest.fixture(autouse=True)
 def immediate_capture_workers(monkeypatch, immediate_runner):
-    from true_screen.platform import linux_wayland, linux_x11
+    from e_z.platform import linux_wayland, linux_x11
     monkeypatch.setattr(linux_wayland, "TaskRunner", lambda: immediate_runner)
     monkeypatch.setattr(linux_x11, "TaskRunner", lambda: immediate_runner)
 

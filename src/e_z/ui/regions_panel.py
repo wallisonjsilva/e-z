@@ -5,8 +5,8 @@ from uuid import UUID
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import QComboBox, QDoubleSpinBox, QFormLayout, QLabel, QListWidget, QListWidgetItem, QPushButton, QVBoxLayout, QWidget
 
-from true_screen.domain.document import EvidenceProject, ZoomMode
-from true_screen.domain.geometry import Rect
+from e_z.domain.document import EvidenceProject, ZoomMode
+from e_z.domain.geometry import Rect
 
 
 class RegionsPanel(QWidget):

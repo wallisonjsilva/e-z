@@ -2,9 +2,11 @@
 
 ## Estado do candidato
 
-Receita [PyInstaller](../../packaging/linux/true-screen.spec) em modo `onedir`, verificada em Fedora 45 x86_64 com CPython 3.15.0, uv 0.13.7, PyInstaller 6.22.3, hooks 2026.9 e Qt 6.12.0. O candidato é **experimental e não está liberado para distribuição pública**: há aviso QtCore pendente, auditoria nativa/licenças incompletas e homologação em máquina limpa não realizada. Consulte a [auditoria](auditoria-dependencias-2026-11-09.md).
+Receita [PyInstaller](../../packaging/linux/e-z.spec) em modo `onedir`, verificada em Fedora 45 x86_64 com CPython 3.15.0, uv 0.13.7, PyInstaller 6.22.3, hooks 2026.9 e Qt 6.12.0. O candidato é **experimental e não está liberado para distribuição pública**: há aviso QtCore pendente, auditoria nativa/licenças incompletas e homologação em máquina limpa não realizada. Consulte a [auditoria](auditoria-dependencias-2026-11-09.md).
 
-O diretório testado é `dist/linux-verified-candidate/true-screen/`. Seus arquivos regulares somam aproximadamente 153,4 MiB. O executável permaneceu ativo por três segundos com Qt offscreen, iniciado fora do projeto e sem variáveis de busca Python/Qt; foi encerrado por SIGTERM. Isso verifica a inicialização local, sem comprovar operações do editor, fechamento pela UI, captura, clipboard ou compatibilidade nativa.
+O diretório testado é `dist/linux-e-z-candidate/e-z/`. Seus arquivos regulares somam aproximadamente 153,4 MiB. O executável permaneceu ativo por três segundos com Qt offscreen, iniciado fora do projeto e sem variáveis de busca Python/Qt; foi encerrado por SIGTERM. Isso verifica a inicialização local, sem comprovar operações do editor, fechamento pela UI, captura, clipboard ou compatibilidade nativa.
+
+Após a renomeação para e-z, o build foi repetido: 160.885.477 bytes regulares, nove bibliotecas Qt, zero links quebrados e zero SONAME Qt sem fornecedor. Os novos [manifesto](../../security/reports/2026-11-09-renomeacao-e-z/bundle.json) e [smoke](../../security/reports/2026-11-09-renomeacao-e-z/smoke.json) preservam os hashes deste candidato. As evidências anteriores de True Screen permanecem sem alteração.
 
 O manifesto identifica requisito de **glibc 2.44**, além de bibliotecas gráficas externas. Este build não atende automaticamente ao Ubuntu 24.04 da matriz proposta. Para esse alvo, preparar ambiente de build na distribuição mínima, com Python 3.15 e wheels compatíveis; conferir novamente os símbolos e testar em cada distribuição. Não copiar glibc do Fedora para tentar corrigir incompatibilidade.
 
@@ -12,11 +14,13 @@ O manifesto identifica requisito de **glibc 2.44**, além de bibliotecas gráfic
 
 Executar na raiz do projeto como usuário comum. Instalar uv 0.13.7 e Python 3.15 compatíveis com o sistema; `readelf` vem do binutils. A instalação inicial e a auditoria consultam a rede; o aplicativo empacotado funciona offline. O lockfile fixa as dependências, mas não torna os bytes do build idênticos em máquinas diferentes. O backend uv_build usado por uv 0.13.7 foi 0.13.7.
 
+Os exemplos usam um cache novo com o nome e-z; a verificação offline desta renomeação reutilizou `/tmp/true-screen-uv-cache`, já populado no ambiente anterior. O nome do diretório temporário não altera a identidade do pacote.
+
 ```sh
-uv --cache-dir /tmp/true-screen-uv-cache sync --locked
+uv --cache-dir /tmp/e-z-uv-cache sync --locked
 .venv/bin/python -m pytest -q
-uv --cache-dir /tmp/true-screen-uv-cache audit --locked --output-format json
-PYINSTALLER_CONFIG_DIR=/tmp/true-screen-pyinstaller .venv/bin/pyinstaller --distpath dist/linux-verified-candidate --workpath build/linux-audited-candidate packaging/linux/true-screen.spec
+uv --cache-dir /tmp/e-z-uv-cache audit --locked --output-format json
+PYINSTALLER_CONFIG_DIR=/tmp/e-z-pyinstaller .venv/bin/pyinstaller --distpath dist/linux-e-z-candidate --workpath build/linux-e-z-candidate packaging/linux/e-z.spec
 ```
 
 Usar um novo `--distpath` para outro candidato ou revisar o diretório gerado existente antes de aceitar sua substituição. `build/` e `dist/` são saídas ignoradas pelo Git. Não regenerar o lock silenciosamente e não executar o aplicativo como root. O build ainda emite aviso de hidden import `xxsubtype` ausente; a inicialização offscreen passou, mas o aviso não substitui revisão de imports e teste funcional do pacote.
@@ -38,14 +42,14 @@ A máquina de destino precisa de sessão gráfica, drivers compatíveis e acesso
 Para uma revisão futura, substituir a pasta de evidências pela data da revisão. O script de manifesto exige `readelf`, falha em links quebrados/dependências Qt não fornecidas e registra hashes, dependências ELF e maior versão GLIBC; dependências externas do sistema ainda precisam de validação.
 
 ```sh
-.venv/bin/python tools/bundle_inventory.py dist/linux-verified-candidate/true-screen --output security/reports/2026-11-09/bundle.json
-.venv/bin/python tools/smoke_bundle.py dist/linux-verified-candidate/true-screen/true-screen --output security/reports/2026-11-09/smoke.json
+.venv/bin/python tools/bundle_inventory.py dist/linux-e-z-candidate/e-z --output security/reports/2026-11-09-renomeacao-e-z/bundle.json
+.venv/bin/python tools/smoke_bundle.py dist/linux-e-z-candidate/e-z/e-z --output security/reports/2026-11-09-renomeacao-e-z/smoke.json
 ```
 
 Para executar no desktop, em sessão de teste com imagens fictícias, sem forçar offscreen:
 
 ```sh
-./dist/linux-verified-candidate/true-screen/true-screen
+./dist/linux-e-z-candidate/e-z/e-z
 ```
 
 Antes de liberar, registrar distribuição, kernel, arquitetura, glibc, desktop, X11/Wayland, versões do portal/backend, monitores/DPI e resultado de cada cenário em STATE.md. Testar em máquina limpa sem Python/uv/venv do projeto e sem variáveis que apontem para a instalação do desenvolvedor.
@@ -55,7 +59,7 @@ Antes de liberar, registrar distribuição, kernel, arquitetura, glibc, desktop,
 | Inicialização/fechamento | Janela abre, redimensiona e fecha sem processo remanescente |
 | Importação | PNG/JPEG e clipboard; cancelamentos/arquivos inválidos preservam documento |
 | Editor/exportação | Seleção 100×40 → 200×80 em vários zooms; três objetos, negativos, PNG sem controles |
-| Clipboard | Colagem em outro aplicativo com dimensões/conteúdo corretos; registrar efeito de fechar o True Screen |
+| Clipboard | Colagem em outro aplicativo com dimensões/conteúdo corretos; registrar efeito de fechar o e-z |
 | Captura X11 | Monitor, múltiplos DPI, origem negativa, restauração em sucesso/falha/cancelamento |
 | Captura Wayland | Portal real, autorização, cancelamento, recusa/indisponibilidade e restauração |
 | Recursos | Responsividade e memória com entradas sintéticas próximas dos limites |
@@ -70,8 +74,8 @@ Incluir CPython, Qt/PySide/Shiboken, bibliotecas de terceiros coletadas e licen�
 Após resolver os bloqueios e homologar, arquivar o diretório **inteiro**, preservando `_internal/`, permissões e symlinks. Exemplo futuro de entrega, ainda não executado nesta revisão:
 
 ```sh
-tar -C dist/linux-verified-candidate -czf dist/true-screen-0.1.0-linux-x86_64.tar.gz true-screen
-sha256sum dist/true-screen-0.1.0-linux-x86_64.tar.gz > dist/true-screen-0.1.0-linux-x86_64.tar.gz.sha256
+tar -C dist/linux-e-z-candidate -czf dist/e-z-0.1.0-linux-x86_64.tar.gz e-z
+sha256sum dist/e-z-0.1.0-linux-x86_64.tar.gz > dist/e-z-0.1.0-linux-x86_64.tar.gz.sha256
 ```
 
 Entregar junto avisos/licenças, instruções e manifesto correspondente. SHA-256 detecta alteração, mas não comprova origem; assinatura e canal de publicação ainda não foram definidos. Testar a extração do arquivo final em diretório novo, não somente a árvore original de build. Para rollback, conservar a versão anterior em outro diretório e iniciar seu executável; não misturar bibliotecas de versões distintas. Não há instalador, atualização automática ou publicação implementados.

@@ -21,7 +21,7 @@ def inventory():
         installed[name] = {"name": name, "version": distribution.version,
                            "license": distribution.metadata.get("License-Expression") or distribution.metadata.get("License")}
     modules = set()
-    for path in Path("src/true_screen").rglob("*.py"):
+    for path in Path("src/e_z").rglob("*.py"):
         for node in ast.walk(ast.parse(path.read_text())):
             if isinstance(node, ast.ImportFrom) and node.module and node.module.startswith("PySide6."):
                 modules.add(node.module)

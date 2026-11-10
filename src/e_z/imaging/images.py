@@ -3,9 +3,9 @@
 from PySide6.QtCore import QFile, QIODevice
 from PySide6.QtGui import QImage, QImageReader
 
-from true_screen.domain.document import SourceImage
-from true_screen.domain.errors import ValidationError
-from true_screen.imaging.budget import check_conversion, check_decode
+from e_z.domain.document import SourceImage
+from e_z.domain.errors import ValidationError
+from e_z.imaging.budget import check_conversion, check_decode
 
 
 class ImageError(ValidationError):

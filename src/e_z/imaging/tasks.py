@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 from PySide6.QtCore import QObject, QRunnable, QThreadPool, Qt, Signal, Slot
 
-from true_screen.domain.errors import ValidationError
+from e_z.domain.errors import ValidationError
 
 
 @dataclass(frozen=True)

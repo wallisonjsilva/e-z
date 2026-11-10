@@ -15,26 +15,26 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtCore import Qt, QTimer
 
-from true_screen.application.session import DocumentSession
-from true_screen.application.capture import CaptureRequest, CaptureStatus
-from true_screen.application import regions
-from true_screen.domain.document import EvidenceProject, SourceImage, ZoomMode
-from true_screen.domain.geometry import Rect
-from true_screen.imaging.images import ImageError, load_image, source_from_image
-from true_screen.imaging.composition import compose, export_png
-from true_screen.imaging.budget import check_output
-from true_screen.platform import clipboard, dialogs
-from true_screen.platform.capture import create_capture_backend
-from true_screen.ui.canvas import CanvasTool, CanvasView
-from true_screen.ui.regions_panel import RegionsPanel
-from true_screen.ui.capture_controller import CaptureController
-from true_screen.imaging.tasks import TaskRunner, public_error
+from e_z.application.session import DocumentSession
+from e_z.application.capture import CaptureRequest, CaptureStatus
+from e_z.application import regions
+from e_z.domain.document import EvidenceProject, SourceImage, ZoomMode
+from e_z.domain.geometry import Rect
+from e_z.imaging.images import ImageError, load_image, source_from_image
+from e_z.imaging.composition import compose, export_png
+from e_z.imaging.budget import check_output
+from e_z.platform import clipboard, dialogs
+from e_z.platform.capture import create_capture_backend
+from e_z.ui.canvas import CanvasTool, CanvasView
+from e_z.ui.regions_panel import RegionsPanel
+from e_z.ui.capture_controller import CaptureController
+from e_z.imaging.tasks import TaskRunner, public_error
 
 
 class MainWindow(QMainWindow):
     def __init__(self, *, runner=None) -> None:
         super().__init__()
-        self.setWindowTitle("True Screen")
+        self.setWindowTitle("e-z")
         self.resize(1100, 720)
         self.session = DocumentSession()
         self.runner = runner if runner is not None else TaskRunner(self)
@@ -309,7 +309,7 @@ class MainWindow(QMainWindow):
         if project:
             self.actions_by_name["Exportar PNG"].setToolTip("Exportar a composição em PNG")
         if project:
-            self.setWindowTitle("True Screen — Evidência" + (" *" if self.session.dirty else ""))
+            self.setWindowTitle("e-z — Evidência" + (" *" if self.session.dirty else ""))
             self.statusBar().showMessage(f"{project.base.width} × {project.base.height} pixels — "
                                         + ("trabalho não exportado" if self.session.dirty else "exportado"))
 

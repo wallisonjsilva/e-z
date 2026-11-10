@@ -5,7 +5,7 @@ import sys
 
 from PySide6.QtGui import QGuiApplication
 
-from true_screen.application.capture import CaptureCapabilities, CaptureResult, CaptureStatus
+from e_z.application.capture import CaptureCapabilities, CaptureResult, CaptureStatus
 
 
 def detect_session(environment, qt_platform: str, system: str) -> str:
@@ -33,9 +33,9 @@ class UnavailableCaptureBackend:
 def create_capture_backend(*, runner=None):
     session = detect_session(os.environ, QGuiApplication.platformName(), sys.platform)
     if session == "wayland":
-        from true_screen.platform.linux_wayland import WaylandCaptureBackend
+        from e_z.platform.linux_wayland import WaylandCaptureBackend
         return WaylandCaptureBackend(runner=runner)
     if session == "x11":
-        from true_screen.platform.linux_x11 import X11CaptureBackend
+        from e_z.platform.linux_x11 import X11CaptureBackend
         return X11CaptureBackend(runner=runner)
     return UnavailableCaptureBackend()

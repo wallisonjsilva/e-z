@@ -4,10 +4,10 @@ import pytest
 from PySide6.QtCore import QSize
 from PySide6.QtGui import QColor, QImage
 
-from true_screen.domain.document import SourceImage
-from true_screen.domain.geometry import MAX_BUFFER_BYTES
-from true_screen.imaging import images
-from true_screen.platform import clipboard, dialogs
+from e_z.domain.document import SourceImage
+from e_z.domain.geometry import MAX_BUFFER_BYTES
+from e_z.imaging import images
+from e_z.platform import clipboard, dialogs
 
 
 def source():

@@ -9,10 +9,10 @@ from tempfile import TemporaryDirectory
 from PySide6.QtCore import ClassInfo, QCoreApplication, QEventLoop, QObject, QTimer, QUrl, Signal, Slot
 from PySide6.QtDBus import QDBusConnection, QDBusObjectPath, QDBusVariant
 
-from true_screen.application.capture import CaptureRequest, CaptureStatus
-from true_screen.domain.document import SourceImage
-from true_screen.imaging.images import image_from_source
-from true_screen.platform.linux_wayland import DESKTOP_PATH, REQUEST, SCREENSHOT, SERVICE, QtPortalTransport, WaylandCaptureBackend
+from e_z.application.capture import CaptureRequest, CaptureStatus
+from e_z.domain.document import SourceImage
+from e_z.imaging.images import image_from_source
+from e_z.platform.linux_wayland import DESKTOP_PATH, REQUEST, SCREENSHOT, SERVICE, QtPortalTransport, WaylandCaptureBackend
 
 
 @ClassInfo(**{"D-Bus Interface": REQUEST})
@@ -83,7 +83,7 @@ def check():
     bus = QDBusConnection.sessionBus()
     assert bus.isConnected(), "Execute este script dentro de dbus-run-session"
     assert bus.registerService(SERVICE)
-    with TemporaryDirectory(prefix="true-screen-portal-") as directory:
+    with TemporaryDirectory(prefix="e-z-portal-") as directory:
         path = Path(directory) / "imagem ficticia.png"
         source = SourceImage(3, 2, bytes([12, 34, 56, 255]) * 6)
         assert image_from_source(source).save(str(path), "PNG")

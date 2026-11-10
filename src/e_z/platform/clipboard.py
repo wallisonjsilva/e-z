@@ -4,10 +4,10 @@ from PySide6.QtCore import QThread
 from PySide6.QtGui import QClipboard, QImage
 from PySide6.QtWidgets import QApplication
 
-from true_screen.domain.document import SourceImage
-from true_screen.domain.geometry import validate_surface
-from true_screen.imaging.images import ImageError, source_from_image
-from true_screen.imaging.budget import check_conversion, check_peak
+from e_z.domain.document import SourceImage
+from e_z.domain.geometry import validate_surface
+from e_z.imaging.images import ImageError, source_from_image
+from e_z.imaging.budget import check_conversion, check_peak
 
 _published_highwater = 0
 

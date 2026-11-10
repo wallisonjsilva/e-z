@@ -15,7 +15,7 @@ def query(package):
     name, version = package
     url = f"https://pypi.org/pypi/{name}/{version}/json"
     try:
-        with urlopen(Request(url, headers={"User-Agent": "true-screen-dependency-review/1"}), timeout=20) as response:
+        with urlopen(Request(url, headers={"User-Agent": "e-z-dependency-review/1"}), timeout=20) as response:
             value = json.load(response)
         return {"name": name, "version": version, "source": url, "vulnerabilities": value.get("vulnerabilities", []), "complete": True}
     except (HTTPError, URLError, TimeoutError, OSError, ValueError) as error:

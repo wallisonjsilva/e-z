@@ -1,5 +1,7 @@
 # Auditoria de dependências — 9 de novembro de 2026
 
+Nota de rastreabilidade: esta auditoria e seus JSONs registram o projeto antes da renomeação True Screen → e-z. O nome local e o hash do lock mudaram; os 19 registros de dependências de terceiros foram preservados integralmente. A renomeação não repete a consulta online nem resolve os bloqueios abaixo. Inventário, manifesto e inicialização posteriores estão em [evidências da renomeação](../../security/reports/2026-11-09-renomeacao-e-z/inventory.json); a [receita ativa](empacotamento-linux.md) usa os novos nomes.
+
 ## Resultado
 
 **Distribuição pública pendente.** OSV retornou zero avisos para os 19 pacotes públicos do lockfile. A API PyPI retornou zero avisos ativos nas 21 versões consultadas, incluindo uv e uv-build. Esses resultados não cobrem integralmente o Qt nativo: **QtCore 6.12.0, incluído no candidato, está na faixa afetada pela CVE-2026-105924**. Não foi identificada chamada da operação afetada no código da aplicação; presença da versão afetada não demonstra exploração. Não há evidência local de backport da correção. [Aviso oficial Qt](https://www.qt.io/blog/security-advisory-cve-2026-105924).

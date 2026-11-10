@@ -6,10 +6,10 @@ import pytest
 from PySide6.QtCore import QSaveFile
 from PySide6.QtGui import QColor, QImage
 
-from true_screen.domain.document import EvidenceProject, SourceImage, ZoomMode, ZoomRegion
-from true_screen.domain.geometry import MAX_BUFFER_BYTES, Rect
-from true_screen.imaging import composition, images
-from true_screen.platform import dialogs
+from e_z.domain.document import EvidenceProject, SourceImage, ZoomMode, ZoomRegion
+from e_z.domain.geometry import MAX_BUFFER_BYTES, Rect
+from e_z.imaging import composition, images
+from e_z.platform import dialogs
 
 
 RED = bytes([255, 0, 0, 255])

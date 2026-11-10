@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Protocol
 
-from true_screen.domain.document import SourceImage
+from e_z.domain.document import SourceImage
 
 
 class CaptureStatus(Enum):

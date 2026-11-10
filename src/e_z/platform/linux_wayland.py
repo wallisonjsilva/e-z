@@ -5,9 +5,9 @@ from uuid import uuid4
 from PySide6.QtCore import QObject, QTimer, QUrl, SLOT, Slot
 from PySide6.QtDBus import QDBusConnection, QDBusMessage, QDBusPendingCallWatcher, QDBusVariant
 
-from true_screen.application.capture import CaptureCapabilities, CaptureResult, CaptureStatus
-from true_screen.imaging.images import load_image
-from true_screen.imaging.tasks import TaskRunner
+from e_z.application.capture import CaptureCapabilities, CaptureResult, CaptureStatus
+from e_z.imaging.images import load_image
+from e_z.imaging.tasks import TaskRunner
 
 SERVICE = "org.freedesktop.portal.Desktop"
 DESKTOP_PATH = "/org/freedesktop/portal/desktop"
@@ -61,7 +61,7 @@ class QtPortalTransport(QObject):
             callback(CaptureStatus.UNAVAILABLE, "")
             return
         self._callback = callback
-        token = "true_screen_" + uuid4().hex
+        token = "e_z_" + uuid4().hex
         sender = self.bus.baseService().lstrip(":").replace(".", "_")
         self._path = f"{DESKTOP_PATH}/request/{sender}/{token}"
         if not self._subscribe(self._path):

@@ -3,9 +3,9 @@
 from PySide6.QtCore import QIODevice, QSaveFile, Qt
 from PySide6.QtGui import QColor, QImage, QPainter
 
-from true_screen.domain.document import EvidenceProject
-from true_screen.imaging.images import ImageError, image_from_source
-from true_screen.imaging.budget import check_output, check_render
+from e_z.domain.document import EvidenceProject
+from e_z.imaging.images import ImageError, image_from_source
+from e_z.imaging.budget import check_output, check_render
 
 
 def compose(project: EvidenceProject, *, resident_bytes: int = 0) -> QImage:

@@ -3,9 +3,9 @@
 from dataclasses import replace
 from uuid import UUID
 
-from true_screen.domain.document import EvidenceProject, ZoomMode, ZoomRegion
-from true_screen.domain.errors import ValidationError
-from true_screen.domain.geometry import Rect, scaled_size
+from e_z.domain.document import EvidenceProject, ZoomMode, ZoomRegion
+from e_z.domain.errors import ValidationError
+from e_z.domain.geometry import Rect, scaled_size
 
 
 def find_region(project: EvidenceProject, region_id: UUID) -> ZoomRegion:

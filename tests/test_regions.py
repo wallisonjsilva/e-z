@@ -4,9 +4,9 @@ from uuid import uuid4
 
 import pytest
 
-from true_screen.application import regions
-from true_screen.domain.document import EvidenceProject, SourceImage, ZoomMode
-from true_screen.domain.geometry import Rect
+from e_z.application import regions
+from e_z.domain.document import EvidenceProject, SourceImage, ZoomMode
+from e_z.domain.geometry import Rect
 
 
 @pytest.fixture

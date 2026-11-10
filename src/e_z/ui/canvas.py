@@ -8,8 +8,8 @@ from PySide6.QtCore import QPointF, QRectF, Qt, QTimer, Signal
 from PySide6.QtGui import QColor, QFocusEvent, QKeyEvent, QMouseEvent, QPainter, QPen, QResizeEvent, QTransform, QWheelEvent
 from PySide6.QtWidgets import QGraphicsScene, QGraphicsView
 
-from true_screen.domain.geometry import Rect, selection_rect
-from true_screen.domain.document import ZoomRegion
+from e_z.domain.geometry import Rect, selection_rect
+from e_z.domain.document import ZoomRegion
 
 
 class CanvasTool(Enum):

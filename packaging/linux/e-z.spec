@@ -12,7 +12,7 @@ unused_qt = [
 ]
 
 a = Analysis(
-    [str(root / "src/true_screen/__main__.py")],
+    [str(root / "src/e_z/__main__.py")],
     pathex=[str(root / "src")],
     binaries=[],
     datas=[],
@@ -45,6 +45,6 @@ def required_binary(entry):
 a.binaries = [entry for entry in a.binaries if required_binary(entry)]
 a.datas = [entry for entry in a.datas if required_binary(entry)]
 pyz = PYZ(a.pure)
-exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name="true-screen",
+exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name="e-z",
           debug=False, bootloader_ignore_signals=False, strip=False, upx=False, console=True)
-coll = COLLECT(exe, a.binaries, a.datas, strip=False, upx=False, name="true-screen")
+coll = COLLECT(exe, a.binaries, a.datas, strip=False, upx=False, name="e-z")

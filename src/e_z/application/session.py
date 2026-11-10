@@ -1,6 +1,6 @@
 """Estado de trabalho da E1; candidatos só são aplicados após validação."""
 
-from true_screen.domain.document import EvidenceProject
+from e_z.domain.document import EvidenceProject
 
 
 class DocumentSession:

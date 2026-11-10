@@ -10,8 +10,8 @@ import subprocess
 
 
 def inspect_bundle(root):
-    if not root.is_dir() or not (root / "true-screen").is_file():
-        raise ValueError("Diretório de candidato True Screen inválido.")
+    if not root.is_dir() or not (root / "e-z").is_file():
+        raise ValueError("Diretório de candidato e-z inválido.")
     files, links, broken = [], [], []
     bundled_names, needed, versions = set(), set(), set()
     for path in sorted(root.rglob("*")):

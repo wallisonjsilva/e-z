@@ -1,8 +1,15 @@
-# Tarefas — True Screen
+# Tarefas — e-z
 
 Estados: `[ ]` pendente, `[/]` em andamento, `[x]` concluída. Cada tarefa de implementação deve registrar sua verificação antes de ser concluída.
 
 ## Documentação inicial
+
+- [x] D07 — Renomear distribuição/comando para `e-z`, módulo para `e_z`, títulos Qt e documentação/empacotamento ativos; preservar referências e evidências anteriores. Verificar lock sem troca de versões, suíte, wheel/sdist, inicialização e manifesto do executável renomeado.
+  - Primeira resolução offline falhou porque o novo cache `/tmp/e-z-uv-cache` estava vazio. Reutilizar o cache gravável já populado `/tmp/true-screen-uv-cache`, sem baixar ou atualizar dependências.
+  - Verificado: lock e ambiente sincronizados offline; 19 registros de terceiros idênticos; 248 testes passaram em 2,89 s; wheel/sdist `e_z` e entry point conferidos. Qt offscreen confirmou nome/título e fechamento do main. Novo launcher e executável onedir iniciaram; manifesto sem links quebrados/Qt pendente. Resultados em STATE.md; segurança e homologação continuam em W11.3.
+
+- [x] D06 — Apresentar o projeto como e-z no README para GitHub, com propósito, recursos atuais, início rápido, roadmap e links técnicos; preservar comandos existentes e distinguir funcionalidades implementadas de planos.
+  - Verificado: links locais, caminhos dos testes e comandos de entrada conferidos contra o repositório. Alteração documental; nome técnico e código preservados. Os 248 testes citados são da execução anterior registrada, sem nova execução nesta revisão.
 
 - [x] D01 — Ler referências e identificar divergências de stack/escopo.
 - [x] D02 — Especificar entregas e critérios de aceitação.

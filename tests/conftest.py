@@ -5,7 +5,7 @@ import os
 import pytest
 from PySide6.QtCore import QObject, Signal
 
-from true_screen.imaging.tasks import public_error
+from e_z.imaging.tasks import public_error
 
 
 class ImmediateRunner(QObject):
@@ -49,7 +49,7 @@ def immediate_runner(qt_app):
 
 @pytest.fixture
 def window(qt_app, immediate_runner):
-    from true_screen.ui.main_window import MainWindow
+    from e_z.ui.main_window import MainWindow
 
     widget = MainWindow(runner=immediate_runner)
     yield widget

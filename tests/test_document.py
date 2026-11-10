@@ -4,8 +4,8 @@ from dataclasses import FrozenInstanceError, replace
 
 import pytest
 
-from true_screen.domain.document import EvidenceProject, SourceImage, ZoomMode, ZoomRegion
-from true_screen.domain.geometry import Rect, scaled_size
+from e_z.domain.document import EvidenceProject, SourceImage, ZoomMode, ZoomRegion
+from e_z.domain.geometry import Rect, scaled_size
 
 
 def base():

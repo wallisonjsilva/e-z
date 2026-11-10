@@ -1,10 +1,10 @@
-# AGENTS.md — True Screen
+# AGENTS.md — e-z
 
 ## Objetivo e fontes
 
 Criar aplicativo desktop offline de screenshot e ampliação de evidências, com implementação e validação Linux primeiro e port Windows posterior. Responder e documentar em português.
 
-Leia [especificação](specs/true-screen.md), [design](specs/designs/true-screen.md), [TASKS.md](TASKS.md) e [STATE.md](STATE.md) antes de implementar. Consulte `refs/` como contexto histórico. Conflitos entre referências foram resolvidos na especificação; não misture Python/Qt e Rust/Slint.
+Leia [especificação](specs/e-z.md), [design](specs/designs/e-z.md), [TASKS.md](TASKS.md) e [STATE.md](STATE.md) antes de implementar. Consulte `refs/` como contexto histórico. Conflitos entre referências foram resolvidos na especificação; não misture Python/Qt e Rust/Slint.
 
 ## Fluxo obrigatório SDD
 
@@ -17,7 +17,7 @@ Use `[ ]` pendente, `[/]` em andamento e `[x]` concluído. Não marque implement
 
 ## Regras de implementação
 
-- Python + PySide6, seguindo `src/true_screen`; confirmar suporte do Python antes de fixar dependências.
+- Python + PySide6, seguindo `src/e_z`; confirmar suporte do Python antes de fixar dependências.
 - Preservar base imutável e gerar cada ampliação diretamente dela.
 - Separar zoom de navegação, pixels físicos e coordenadas lógicas/DPI.
 - Centralizar composição para exportação e clipboard; excluir elementos de edição.

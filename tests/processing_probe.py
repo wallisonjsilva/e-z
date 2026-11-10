@@ -14,12 +14,12 @@ os.environ["QT_QPA_PLATFORM"] = "offscreen"
 from PySide6.QtCore import QEventLoop, QTimer
 from PySide6.QtWidgets import QApplication
 
-from true_screen.application import regions
-from true_screen.domain.document import SourceImage, ZoomMode
-from true_screen.domain.geometry import Rect
-from true_screen.imaging.images import image_from_source, load_image
-from true_screen.platform import dialogs
-from true_screen.ui.main_window import MainWindow
+from e_z.application import regions
+from e_z.domain.document import SourceImage, ZoomMode
+from e_z.domain.geometry import Rect
+from e_z.imaging.images import image_from_source, load_image
+from e_z.platform import dialogs
+from e_z.ui.main_window import MainWindow
 
 
 def run():
@@ -53,7 +53,7 @@ def run():
         loop.exec()
         assert not window.runner.busy
 
-    with TemporaryDirectory(prefix="true-screen-processing-") as directory:
+    with TemporaryDirectory(prefix="e-z-processing-") as directory:
         path, output = Path(directory) / "base.png", Path(directory) / "saida.png"
         fixture = SourceImage(1920, 1080, bytes([17, 31, 99, 255]) * (1920 * 1080))
         assert image_from_source(fixture).save(str(path), "PNG")

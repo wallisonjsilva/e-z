@@ -4,13 +4,13 @@ import sys
 
 from PySide6.QtWidgets import QApplication
 
-from true_screen.ui.main_window import MainWindow
+from e_z.ui.main_window import MainWindow
 
 
 def main() -> int:
     app = QApplication(sys.argv)
-    app.setApplicationName("True Screen")
-    app.setOrganizationName("True Screen")
+    app.setApplicationName("e-z")
+    app.setOrganizationName("e-z")
     window = MainWindow()
     window.show()
     return app.exec()

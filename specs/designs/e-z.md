@@ -1,4 +1,4 @@
-# Design técnico — True Screen
+# Design técnico — e-z
 
 Status: plano técnico; nenhuma funcionalidade implementada por este documento.
 
@@ -8,6 +8,8 @@ E1 e E2 são implementadas e homologadas primeiro no Linux. O port Windows em E3
 
 ## 1. Arquitetura e stack
 
+Renomeação autorizada para e-z: usar `src/e_z`, entry point `e-z = e_z:main` e saída PyInstaller `e-z`. O backend uv_build infere o módulo `e_z` a partir do nome da distribuição. Atualizar imports, nomes Qt e ferramentas de inspeção; regenerar o lock offline preservando versões transitivas. Relatórios de segurança anteriores continuam imutáveis e identificados como anteriores à renomeação.
+
 Auditoria e build W11 seguem os [requisitos complementares](../auditoria-empacotamento.md), a [auditoria registrada](../../docs/engineering/auditoria-dependencias-2026-11-09.md) e a [receita Linux](../../docs/engineering/empacotamento-linux.md). O candidato usa PyInstaller onedir com coleta restrita de Qt e inspeção ELF; avisos Python não substituem verificação das bibliotecas nativas. Distribuição permanece condicionada aos bloqueios documentados e à matriz nativa.
 
 Monólito modular Python, com PySide6 para janela, cena, captura inicial, composição e clipboard. Pillow será usado para os filtros explícitos da E2, incluindo Lanczos3. MSS só será adicionado se testes demonstrarem lacuna no adaptador de captura. Não introduzir Rust, serviços ou framework de plugins.
@@ -15,7 +17,7 @@ Monólito modular Python, com PySide6 para janela, cena, captura inicial, compos
 W01 mantém Python 3.15 (`>=3.15,<3.16`) e `.python-version` 3.15 após consultar os metadados oficiais de [PySide6 6.12.0](https://pypi.org/project/PySide6/6.12.0/) e [PyInstaller 6.22.3](https://pypi.org/project/pyinstaller/6.22.3/), que incluem Python 3.15. Dependências diretas fixas e lockfile do uv controlam a instalação; pytest integra o grupo de desenvolvimento. Compatibilidade declarada não substitui execução local nem homologação nativa Linux/Windows.
 
 ```text
-src/true_screen/
+src/e_z/
   __init__.py                 # entrada pública existente
   app.py                     # inicialização e composição de dependências
   domain/                    # geometria, documento, regiões; sem Qt

@@ -4,11 +4,11 @@ from math import ceil, floor, isfinite
 
 from PySide6.QtGui import QGuiApplication
 
-from true_screen.application.capture import CaptureCapabilities, CaptureRequest, CaptureResult, CaptureStatus, Monitor
-from true_screen.domain.geometry import validate_buffer_budget, validate_surface
-from true_screen.imaging.images import source_from_image
-from true_screen.imaging.budget import check_peak
-from true_screen.imaging.tasks import TaskRunner
+from e_z.application.capture import CaptureCapabilities, CaptureRequest, CaptureResult, CaptureStatus, Monitor
+from e_z.domain.geometry import validate_buffer_budget, validate_surface
+from e_z.imaging.images import source_from_image
+from e_z.imaging.budget import check_peak
+from e_z.imaging.tasks import TaskRunner
 
 
 class X11CaptureBackend:

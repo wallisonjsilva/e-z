@@ -20,7 +20,7 @@ def main():
     for key in ("PYTHONPATH", "PYTHONHOME", "QT_PLUGIN_PATH", "QT_QPA_PLATFORM_PLUGIN_PATH", "LD_LIBRARY_PATH", "LD_PRELOAD"):
         environment.pop(key, None)
     environment["QT_QPA_PLATFORM"] = "offscreen"
-    with tempfile.TemporaryDirectory(prefix="true-screen-smoke-") as directory:
+    with tempfile.TemporaryDirectory(prefix="e-z-smoke-") as directory:
         with tempfile.TemporaryFile() as log:
             process = subprocess.Popen([str(executable)], cwd=directory, env=environment,
                                        stdout=log, stderr=log)

@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 from math import ceil, floor, isfinite
-from true_screen.domain.errors import ValidationError
+from e_z.domain.errors import ValidationError
 
 MAX_AXIS = 32_768
 MAX_PIXELS = 40_000_000
